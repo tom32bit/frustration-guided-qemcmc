@@ -26,5 +26,5 @@
     "QAOA",
     "uncertainty quantification"
   ],
-  "notes": "Code is MIT-licensed and the analysis plans CC BY 4.0. Third-party data in data/external/ keep their own terms: the ENIGMA Toolbox (BSD 3-Clause) and the WU-Minn HCP Open Access Data Use Terms for the connectomes, and the CBIG license (MIT) for the parcel centroids; see data/README.md."
+  "notes": "Code is MIT-licensed; the stored results, analysis plans and documentation are CC BY 4.0. Third-party data in data/external/ keep their own terms: the ENIGMA Toolbox (BSD 3-Clause) and the WU-Minn HCP Open Access Data Use Terms for the connectomes, and the CBIG license (MIT) for the parcel centroids; see data/README.md."
 }

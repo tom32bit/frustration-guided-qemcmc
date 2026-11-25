@@ -99,7 +99,7 @@ See [`CITATION.cff`](CITATION.cff).
 ## License
 
 - **Code:** MIT (see [`LICENSE`](LICENSE)).
-- **Analysis plans and other text:** CC BY 4.0 (see [`LICENSE-docs.md`](LICENSE-docs.md)).
+- **Results, analysis plans and other text:** CC BY 4.0 (see [`LICENSE-CC-BY-4.0.md`](LICENSE-CC-BY-4.0.md)).
 - **Third-party data** in `data/external/` keep their original terms. The connectomes come from the ENIGMA Toolbox
   (BSD 3-Clause) under the WU-Minn HCP Open Access Data Use Terms, and the parcel centroids from CBIG (MIT). See
   [`data/README.md`](data/README.md).
