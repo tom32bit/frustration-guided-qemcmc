@@ -1,0 +1,24 @@
+# E8 amendment 1, written 2026-11-26 01:06:00 +0600, after the E8 analysis had been reported (2026-11-24).
+# Cause: qsr2/ipr.py computed the long-time (dephased) quench proposal and the participation ratios from eigenvectors,
+# Qinf = (W_e W_e^T + W_o W_o^T)/2 with W = V*V. That form is exact only if no energy level of H(gamma) is degenerate
+# within a flip sector. In 30 of the 288 networks (all structural: 8 SC200, 22 SC400), two or three regions have no
+# couplings to the rest of their sub-network; the symmetry between them makes levels exactly degenerate. For those
+# networks the eigenvector form is not the long-time average, and it depends on the arbitrary basis that eigh returns
+# inside a degenerate level (so the original values are not exactly reproducible). Found while writing the manuscript's
+# appendix on the participation-ratio bound.
+# Fix: Qinf and IPR are computed with eigenspace projectors, Qinf = (1/2) sum over sectors and levels of P o P, which
+# is exact for any spectrum (qsr2/ipr.py, sector_long_time). New test: tests/test_e8.py,
+# test_degenerate_levels_long_time_average (the old form misses the long-time average by 0.056 on that network).
+# Rerun: experiments/e8_ipr_run.py (all 288 networks, unchanged script) and experiments/e8_ipr_analyze.py (unchanged).
+# The rows are stored in the order of the original run, because the analysis's bootstrap and permutation draws
+# (seed 2028) follow the row order. The original results are kept as results/e8_*_before_amendment1.*.
+# Effect: values change only on the 30 networks above. The long-time gap delta_inf is unchanged (to 2e-13), the
+# bounds hold on all 288 networks at all three temperatures (no violation), and no finite-time chain exceeds the bound.
+# Every functional-network statistic is unchanged. Structural-network statistics quoted in the manuscript:
+#   Spearman rho(F, ell_pi)           -0.30 [-0.47, -0.12]   ->  -0.34 [-0.49, -0.16]   (Holm-significant before and after)
+#   partial rho(r, F | ell_pi)        0.56 [0.38, 0.66]      ->  0.55 [0.37, 0.66]      (significant before and after)
+#   partial rho(r, ell_pi | F)        -0.03, p_Holm = 0.69   ->  -0.04, p_Holm = 0.69   (not significant before and after)
+#   slope of ell_pi (bits per node)   -0.10 [-0.20, -0.02]   ->  -0.10 [-0.20, -0.02]
+# No test outcome and no conclusion changed. New hashes of the changed files:
+05148c2b0bce095be310fca834e011a9bad244f313360bda2472cbc12351e275  qsr2/ipr.py
+4b4f41d71d3c96a0f3542cdc550b158e45346b9866c90de9bc1ae4f011444ac6  tests/test_e8.py

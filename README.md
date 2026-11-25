@@ -82,12 +82,16 @@ make verify      # check every file against the newest SHA-256 manifest in resul
   fingerprinted with SHA-256 (`results/*_prereg_hashes.txt`). Check them with `sha256sum -c`. The fingerprints were
   stored locally, not in a public registry.
 - **Later changes.** These are recorded as dated amendments (`results/*_amendment*.txt`).
-- **Files that no longer match their fingerprints.** Five files changed after they were fingerprinted:
+- **Files that no longer match their fingerprints.** Seven files changed after they were fingerprinted:
     - `qsr2/direct.py`, `experiments/e7_analyze.py` and `tests/test_e7.py` were fixed after a crash in a secondary
       table. A shot count of 0 now counts as 1, the fewest shots the protocol allows. No endpoint uses that count.
       `results/e7_amendment1.txt` records the cause and their new fingerprints.
     - `qsr2/networks.py` and `experiments/e7_chain.sh` had only paths updated in the restructuring of 23 Nov 2026:
       the data folder (`DATA_DIR`) and the Python environment (`PYTHONPATH`).
+    - `qsr2/ipr.py` and `tests/test_e8.py` were corrected after the participation-ratio study (E8): its long-time
+      formula assumed non-degenerate energy levels, which fails on 30 structural networks. The study was rerun;
+      `results/e8_amendment1.txt` records the cause, the effect on every reported number and the new
+      fingerprints, and the original results are kept as `results/e8_*_before_amendment1.*`.
 - **Restructuring.** The project was restructured into this layout on 23 Nov 2026; `results/restructure_2026-11-23.log`
   records every move.
 - **Manifests.** `results/MANIFEST_2026-11-23_manuscript.sha256` records the authors' full working folder before the

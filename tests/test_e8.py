@@ -89,3 +89,32 @@ def test_bounds_order_and_bruteforce():
                 for i in range(len(iprs))]
         best_ipb = min(best_ipb, np.mean(vals))
     assert np.isclose(lam, best_lam, rtol=1e-9) and np.isclose(ipb, best_ipb, rtol=1e-9)
+
+
+def _net_with_isolated(n, seed, isolated=2):
+    """A random network whose last `isolated` regions have no couplings to any other region. Their symmetry makes some
+    levels of H(g) degenerate within a flip sector, as in 30 structural sub-networks of E8 (amendment 1)."""
+    J = _net(n, seed)
+    J[-isolated:, :] = 0.0
+    J[:, -isolated:] = 0.0
+    return J
+
+
+def test_degenerate_levels_long_time_average():
+    """With degenerate levels the projector form is still the long-time average of the finite-time quench."""
+    n, g = 5, 0.5
+    J = _net_with_isolated(n, 6)
+    E = ising.energies(J)
+    M = 2 ** (n - 1)
+    a = proposals.layden_alpha(J, np.zeros(n))
+    spacing = []
+    for X in proposals._sector_mixers(n):
+        H = g * X
+        H[np.diag_indices_from(H)] += (1 - g) * a * E[:M]
+        spacing.append(np.min(np.diff(np.linalg.eigvalsh(H))))
+    assert min(spacing) < 1e-10                                     # a sector has a degenerate level
+    iprs, Qinf = ipr.ipr_and_qinf(E, J, gammas=[g])
+    assert np.allclose(Qinf, Qinf.T, atol=1e-12) and np.allclose(Qinf.sum(1), 1.0, atol=1e-12)
+    assert np.allclose(np.diag(Qinf), iprs[0], atol=1e-12)
+    Qt, _ = proposals.quench_mean_sectors(E, J, gammas=[g], times=np.linspace(0.0, 4000.0, 20001), full=False)
+    assert np.max(np.abs(Qt - Qinf)) < 0.01

@@ -2,7 +2,7 @@
   "title": "Quantum Stability Resolver (QSR): frustration-guided quantum-enhanced sampling of community uncertainty in brain networks",
   "description": "Code and data for the paper \"Frustration-guided quantum-enhanced sampling of community uncertainty in brain networks\": the Quantum Stability Resolver (QSR), a quantum-enhanced Markov chain Monte Carlo sampler for the uncertainty of community structure in human brain networks. The archive holds the Python code, the input data, the stored results (raw rows, summaries and run logs) and the analysis plans that were fixed before each study's data existed, with their SHA-256 fingerprints. The studies cover exact computations up to 13 nodes, IBM Heron hardware runs, non-brain controls and a comparison with sampling the quantum device directly.",
   "upload_type": "software",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "language": "eng",
   "license": "mit",
   "creators": [
