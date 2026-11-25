@@ -3,7 +3,7 @@ message: "If you use this software, data or results, please cite them as below."
 title: "Quantum Stability Resolver (QSR): frustration-guided quantum-enhanced sampling of community uncertainty in brain networks"
 type: software
 version: "2.0.0"
-date-released: "2026-11-23"
+date-released: "2026-11-25"
 license: MIT
 repository-code: "https://github.com/tom32bit/frustration-guided-qemcmc"
 authors:
