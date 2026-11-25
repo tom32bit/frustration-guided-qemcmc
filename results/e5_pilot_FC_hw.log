@@ -1,0 +1,4 @@
+{"backend": "ibm_kingston", "median_2q_error": 0.0019068199226272564, "two_qubit_gate": "cz", "layout": [2, 3, 1, 4, 16, 23], "two_qubit_count_min_max": [105, 105], "depth_max": 245, "active_qubits_max": 6}
+submitted job dc0s6b6q4uuc73a33t00
+wrote /home/shafin/Desktop/Tomal/Quantum Stability Resolver/QSR2/results/e5_pilot_FC_hw.json | usage: 42
+exit 0

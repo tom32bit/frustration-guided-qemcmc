@@ -1,0 +1,9 @@
+# E7 amendment 1, written 2026-11-23 12:48:38 +0600, after the run and before any successful analysis output.
+# Cause: experiments/e7_analyze.py crashed (ZeroDivisionError in the secondary calls table) because qsr2/direct.calls_to_eps
+# returned 0 shots when a deterministic direct sampler was within eps on every pair (46 stored values: optimiser, greedy,
+# and qaoa_energy_p4 on the n = 3 FC100 LH_Limbic network). The protocol defines calls as the fewest shots, which is 1 there.
+# Fix: calls_to_eps returns >= 1; the analysis reads stored calls as max(1, value). Nothing else changed: floors, the gate,
+# E7-A and E7-B do not use calls. The runner was not re-run. New hashes of the changed files:
+04d75d5a9c1bc721ed27280b145b4e63a6e170bd5b1d5db79427ba2b2c56bfe6  qsr2/direct.py
+9be9800d16188a7de842d1a276badcf9b417c66d9bb5b3394b5e6b4db902970e  experiments/e7_analyze.py
+0d11b3ca5e437813a4ec674e449eb041a371d1ae186a678d1b3cbfc70c2d7d87  tests/test_e7.py

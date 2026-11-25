@@ -1,0 +1,25 @@
+858 instances matched to G1 (180s)
+1/858 done (n=10, 106s)
+51/858 done (n=10, 98s)
+101/858 done (n=10, 95s)
+151/858 done (n=9, 15s)
+201/858 done (n=9, 15s)
+251/858 done (n=8, 31s)
+301/858 done (n=8, 27s)
+351/858 done (n=7, 4s)
+401/858 done (n=7, 3s)
+451/858 done (n=7, 4s)
+501/858 done (n=6, 15s)
+551/858 done (n=6, 12s)
+601/858 done (n=5, 1s)
+651/858 done (n=5, 1s)
+701/858 done (n=5, 1s)
+751/858 done (n=4, 0s)
+801/858 done (n=4, 0s)
+851/858 done (n=4, 0s)
+done
+
+real	45m26.242s
+user	320m8.754s
+sys	3m52.214s
+exit 0

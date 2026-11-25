@@ -1,0 +1,3793 @@
+{
+ "rule": "E6: SEALED two-factor routing predictions for every E6 instance, computed from instance data only (couplings,\nsigma, F) BEFORE any E6 row exists. Same rule and thresholds as E3 amendment 13, E3c and E4:\n  predicted quantum win  <=>  F >= 0.10  and  beta * D >= 1   (beta = 1 / sigma_ROI, beta_tilde = 1)\nWrites results/e6_routing_predictions.json (refuses to overwrite).",
+ "F_threshold": 0.1,
+ "betaD_threshold": 1.0,
+ "written_at": "2026-11-22T22:20:27+06:00",
+ "e6_rows_when_written": 0,
+ "instances": [
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "border-set",
+    1.7977827367,
+    0.1369863014
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.136986301369863,
+   "beta_D": 0.1430333331703193,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "within-set",
+    0.9376266576,
+    0.2790243902
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.27902439024390246,
+   "beta_D": 2.2018530640787617,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "border-set",
+    1.1492911137,
+    0.1547368421
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.1547368421052632,
+   "beta_D": 0.03346544491945275,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "within-set",
+    0.953666111,
+    0.2224576271
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.22245762711864409,
+   "beta_D": 0.7593201883730684,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "border-set",
+    0.76395395,
+    0.286908078
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.28690807799442897,
+   "beta_D": 0.0,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "within-set",
+    0.8905872381,
+    0.2369614512
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.23696145124716556,
+   "beta_D": 1.8339958888968806,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "border-set",
+    1.3522197044,
+    0.1642411642
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.16424116424116425,
+   "beta_D": 0.289379267700967,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    7,
+    "within-set",
+    0.806647746,
+    0.1466395112
+   ],
+   "ds": "karate",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.14663951120162935,
+   "beta_D": 1.0439566307612524,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "border-set",
+    0.9082982109,
+    0.1234567901
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.12345679012345678,
+   "beta_D": 1.5203733358796967,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "within-set",
+    0.8862087127,
+    0.2714486639
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.2714486638537272,
+   "beta_D": 2.538905302732595,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "border-set",
+    1.3553835321,
+    0.1674187726
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.16741877256317692,
+   "beta_D": 0.7178580453054112,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "within-set",
+    0.9346646837,
+    0.2184368737
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.218436873747495,
+   "beta_D": 0.3703508351225875,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "border-set",
+    0.8856119761,
+    0.1809290954
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.1809290953545232,
+   "beta_D": 4.27118060478106,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "within-set",
+    0.7877714313,
+    0.2521246459
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.25212464589235134,
+   "beta_D": 2.293116430909884,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "border-set",
+    1.8124232164,
+    0.1830785638
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.18307856381087811,
+   "beta_D": 0.14187793160664966,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    8,
+    "within-set",
+    0.9427367623,
+    0.1952662722
+   ],
+   "ds": "karate",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.1952662721893491,
+   "beta_D": 1.6062656881168953,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "border-set",
+    0.9800030803,
+    0.1418604651
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.14186046511627906,
+   "beta_D": 1.3119492290871186,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "within-set",
+    1.0037052813,
+    0.1878330373
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.18783303730017764,
+   "beta_D": 1.494462595673102,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "border-set",
+    0.8607688813,
+    0.1048387097
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.10483870967741936,
+   "beta_D": 1.8183944904043436,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "within-set",
+    0.9672295618,
+    0.2170269078
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.2170269078076753,
+   "beta_D": 4.534976813899641,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "border-set",
+    0.9608697005,
+    0.1318443804
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.1318443804034582,
+   "beta_D": 2.9734966724328227,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "within-set",
+    0.9413998948,
+    0.275751503
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.27575150300601214,
+   "beta_D": 3.3252975698660836,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "border-set",
+    1.0960283659,
+    0.1493614659
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.14936146585230428,
+   "beta_D": 0.7464969371707576,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    9,
+    "within-set",
+    0.9399552139,
+    0.1662190391
+   ],
+   "ds": "karate",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.1662190390928081,
+   "beta_D": 1.5173377275076276,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "border-set",
+    0.9955093516,
+    0.2685131195
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.2685131195335277,
+   "beta_D": 3.3877622687039963,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "within-set",
+    0.982484432,
+    0.218156228
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.21815622800844478,
+   "beta_D": 2.148747646545997,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "border-set",
+    0.8671956359,
+    0.1519461078
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.15194610778443113,
+   "beta_D": 0.3548130259939764,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "within-set",
+    0.9177030234,
+    0.217403874
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.21740387395200922,
+   "beta_D": 2.3933979898302713,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "border-set",
+    1.2043842078,
+    0.1333333333
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.13333333333333336,
+   "beta_D": 1.5498930114055238,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "within-set",
+    0.8799534613,
+    0.2658815132
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.26588151320485365,
+   "beta_D": 3.9774830758027306,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "border-set",
+    1.5923412788,
+    0.1087378641
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.10873786407766993,
+   "beta_D": 0.05841916996863256,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    10,
+    "within-set",
+    0.8574985381,
+    0.1584460934
+   ],
+   "ds": "karate",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.15844609340899168,
+   "beta_D": 1.582676584033963,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "border-set",
+    1.3133255812,
+    0.2154094393
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.21540943929003625,
+   "beta_D": 1.1346737623499197,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "within-set",
+    0.8672151489,
+    0.2706178362
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.2706178361755662,
+   "beta_D": 3.307050772928294,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "border-set",
+    1.3366255487,
+    0.1746478873
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.17464788732394365,
+   "beta_D": 2.584527475143984,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "within-set",
+    0.9244628084,
+    0.2259390768
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.22593907680807335,
+   "beta_D": 1.6931101793201124,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "border-set",
+    1.1934570617,
+    0.1056940149
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.10569401491722757,
+   "beta_D": 1.1730627308541435,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "within-set",
+    0.9199438578,
+    0.235828877
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.23582887700534763,
+   "beta_D": 3.323781426098192,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    11,
+    "border-set",
+    1.625631473,
+    0.090880354
+   ],
+   "ds": "karate",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.09088035403824878,
+   "beta_D": 0.04921164564637707,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    12,
+    "border-set",
+    0.9550716057,
+    0.209830411
+   ],
+   "ds": "karate",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.20983041103765454,
+   "beta_D": 1.8085269387156857,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    12,
+    "within-set",
+    0.9291432768,
+    0.25951764
+   ],
+   "ds": "karate",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.25951764002391864,
+   "beta_D": 4.305041106201479,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    12,
+    "border-set",
+    1.1480660622,
+    0.1230342276
+   ],
+   "ds": "karate",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.12303422756706754,
+   "beta_D": 0.0580686677045284,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    12,
+    "border-set",
+    1.0835549299,
+    0.1714614499
+   ],
+   "ds": "karate",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.1714614499424626,
+   "beta_D": 0.24206902182452392,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_karate",
+    "karate",
+    12,
+    "border-set",
+    1.3391861423,
+    0.1095283696
+   ],
+   "ds": "karate",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.10952836964328465,
+   "beta_D": 0.9843156052359723,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "border-set",
+    0.6861375536,
+    0.110612855
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.11061285500747384,
+   "beta_D": 0.05205120391179487,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "within-set",
+    3.8361275839,
+    0.2103386809
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.2103386809269162,
+   "beta_D": 0.0,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "border-set",
+    4.2830632564,
+    0.017187304
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.017187303976916327,
+   "beta_D": 0.2865408829637014,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "within-set",
+    1.947955859,
+    0.1355490388
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.1355490387748452,
+   "beta_D": 1.4494832615236377,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "border-set",
+    1.1274306068,
+    0.1291208791
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.1291208791208791,
+   "beta_D": 0.11826300663141086,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "within-set",
+    0.6969474868,
+    0.1293984109
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.12939841089670828,
+   "beta_D": 3.511553549300084,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "border-set",
+    0.5013517754,
+    0.1226415094
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.12264150943396224,
+   "beta_D": 1.9946074774825975,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    7,
+    "within-set",
+    0.8111961892,
+    0.013803681
+   ],
+   "ds": "lesmis",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.013803680981595094,
+   "beta_D": 0.4622802781786679,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "border-set",
+    0.7847866766,
+    0.1940763835
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.19407638347622758,
+   "beta_D": 0.03353241111244279,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "within-set",
+    0.8390273158,
+    0.1622222222
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.1622222222222222,
+   "beta_D": 0.05959281546110518,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "border-set",
+    1.0151385216,
+    0.1203830369
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.12038303693570451,
+   "beta_D": 0.04925436177847853,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "within-set",
+    1.5380099144,
+    0.2041128856
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.20411288558302337,
+   "beta_D": 2.182249807103727,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "border-set",
+    0.9407496406,
+    0.119133574
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.11913357400722022,
+   "beta_D": 2.0634357822661036,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "within-set",
+    0.6946603564,
+    0.0622729632
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.06227296315516349,
+   "beta_D": 0.4040848909565294,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "border-set",
+    0.5739201314,
+    0.0277078086
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.027707808564231738,
+   "beta_D": 0.1089001702200236,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    8,
+    "within-set",
+    1.5860852254,
+    0.137254902
+   ],
+   "ds": "lesmis",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.13725490196078433,
+   "beta_D": 0.45853319585107727,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "border-set",
+    0.6982283493,
+    0.1816443595
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.18164435946462715,
+   "beta_D": 1.0109620350625808,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "within-set",
+    2.5734380431,
+    0.0930930931
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.09309309309309312,
+   "beta_D": 0.009036865688598095,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "border-set",
+    1.8056951228,
+    0.11716693
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.1171669299631385,
+   "beta_D": 0.09968460219341593,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "within-set",
+    1.2803113524,
+    0.195943408
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.19594340803806182,
+   "beta_D": 0.4525188957228992,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "border-set",
+    1.4870346034,
+    0.1208791209
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.12087912087912087,
+   "beta_D": 0.12877263331194605,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "within-set",
+    0.7716687406,
+    0.0678210678
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.06782106782106784,
+   "beta_D": 0.7028571365536153,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "border-set",
+    1.5114534875,
+    0.1045016077
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.1045016077170418,
+   "beta_D": 0.3308074010383468,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    9,
+    "within-set",
+    1.5155762767,
+    0.0814302885
+   ],
+   "ds": "lesmis",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.08143028846153848,
+   "beta_D": 1.1311114726426446,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "border-set",
+    1.15383973,
+    0.2023381295
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.20233812949640284,
+   "beta_D": 0.6782646457151779,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "within-set",
+    3.147287567,
+    0.2261035458
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.226103545819354,
+   "beta_D": 0.01105161443141255,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "border-set",
+    1.937667623,
+    0.0881841877
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.08818418766290181,
+   "beta_D": 0.5579290628947207,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "within-set",
+    1.4923181362,
+    0.1836431668
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.18364316683494683,
+   "beta_D": 2.267754069532867,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "border-set",
+    2.9905470698,
+    0.0499132781
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.04991327808826363,
+   "beta_D": 0.7716622590585116,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "within-set",
+    0.7299394115,
+    0.0566744731
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.05667447306791569,
+   "beta_D": 2.0295951391866556,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "border-set",
+    1.8628599386,
+    0.2653250058
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.2653250057830211,
+   "beta_D": 2.031453705692305,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    10,
+    "within-set",
+    1.4535731077,
+    0.0629338269
+   ],
+   "ds": "lesmis",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.06293382693197594,
+   "beta_D": 0.3603599440721397,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "border-set",
+    2.9650507459,
+    0.072617906
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.0726179060238863,
+   "beta_D": 0.11991550432784434,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "within-set",
+    2.8353167095,
+    0.1398447607
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.13984476067270377,
+   "beta_D": 0.012161871901510099,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "border-set",
+    0.7427322572,
+    0.2018706157
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.2018706157443493,
+   "beta_D": 3.077440441626165,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "within-set",
+    0.9457529483,
+    0.1557641537
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.15576415371076568,
+   "beta_D": 1.034619691527102,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "border-set",
+    1.9602960987,
+    0.128166415
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.128166415031035,
+   "beta_D": 0.0819846990587737,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "within-set",
+    0.693870067,
+    0.0573482428
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.057348242811501596,
+   "beta_D": 2.6353225417134896,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "border-set",
+    1.3708406754,
+    0.2149782681
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.21497826813774662,
+   "beta_D": 2.2350006402947766,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    11,
+    "within-set",
+    1.3868468979,
+    0.0481430536
+   ],
+   "ds": "lesmis",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.0481430536451169,
+   "beta_D": 0.3154638054613162,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "border-set",
+    2.4197752456,
+    0.16930639
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.16930638995084654,
+   "beta_D": 0.0147593400580078,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "within-set",
+    1.9654248267,
+    0.1737563924
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.17375639237563922,
+   "beta_D": 0.08569193303162839,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "border-set",
+    2.4082475977,
+    0.0916018416
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.0916018415621527,
+   "beta_D": 1.8202949457868471,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "within-set",
+    0.9191213804,
+    0.138946742
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.13894674204105922,
+   "beta_D": 1.558117127901654,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "border-set",
+    2.9096204606,
+    0.1071579839
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.10715798390512493,
+   "beta_D": 0.35431694580212464,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "within-set",
+    0.8274187063,
+    0.0502512563
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.050251256281407024,
+   "beta_D": 0.47292180470450834,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "border-set",
+    2.6758059031,
+    0.1863647431
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.18636474312149992,
+   "beta_D": 0.5833665319079049,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lesmis",
+    "lesmis",
+    12,
+    "within-set",
+    1.4470663755,
+    0.1334983498
+   ],
+   "ds": "lesmis",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.13349834983498352,
+   "beta_D": 3.897368944652582,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "border-set",
+    0.3536041514,
+    0.1927064249
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.19270642486869524,
+   "beta_D": 2.3618928905290617,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "within-set",
+    0.341278092,
+    0.1869663325
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.18696633245301153,
+   "beta_D": 0.8561377414011364,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "border-set",
+    0.4552759571,
+    0.2346012003
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.234601200276403,
+   "beta_D": 0.9509146574009136,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "within-set",
+    0.4725500181,
+    0.1466495603
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.14664956033815646,
+   "beta_D": 0.10891326682614196,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "border-set",
+    0.5168378686,
+    0.1116742041
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.11167420408402447,
+   "beta_D": 0.09985868494610907,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "within-set",
+    0.4711324353,
+    0.2272782437
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.22727824374868114,
+   "beta_D": 1.0300106621397083,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "border-set",
+    0.7671898728,
+    0.1607054393
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.1607054393106429,
+   "beta_D": 0.30188420901162955,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    7,
+    "within-set",
+    0.2973025729,
+    0.2169073355
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.216907335489304,
+   "beta_D": 1.0143820537803303,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "border-set",
+    0.51612787,
+    0.2682783052
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.26827830524048263,
+   "beta_D": 0.6992603030472528,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "within-set",
+    0.3071958105,
+    0.274763985
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.2747639849542412,
+   "beta_D": 2.639509845727417,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "border-set",
+    0.2383672758,
+    0.2040028502
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.20400285015227945,
+   "beta_D": 2.1992154248654376,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "within-set",
+    0.8935717458,
+    0.1762188388
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.17621883877233374,
+   "beta_D": 0.48009232010210556,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "border-set",
+    0.677292177,
+    0.1272386562
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.12723865624192415,
+   "beta_D": 0.11599821676283525,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "within-set",
+    0.5881812134,
+    0.1420443455
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.1420443454933479,
+   "beta_D": 2.538134540102042,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "border-set",
+    0.4738665564,
+    0.1138795918
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.11387959176924356,
+   "beta_D": 0.21166228231333228,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    8,
+    "within-set",
+    0.5280620225,
+    0.2058868185
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.2058868185333074,
+   "beta_D": 2.09818401367732,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "border-set",
+    0.3029994216,
+    0.1404666096
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.140466609566872,
+   "beta_D": 2.732259189997342,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "within-set",
+    0.3697491738,
+    0.2204945566
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.22049455659228856,
+   "beta_D": 0.9490205335081966,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "border-set",
+    0.3668200705,
+    0.1537768944
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.153776894364532,
+   "beta_D": 3.5934547244458805,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "within-set",
+    0.6551777753,
+    0.1924046134
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.19240461344725573,
+   "beta_D": 0.6027408337122766,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "border-set",
+    0.6724791317,
+    0.174171057
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.17417105702465252,
+   "beta_D": 4.582990276819274,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "within-set",
+    0.5272698342,
+    0.1774564179
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.17745641789496877,
+   "beta_D": 3.954923494569475,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "border-set",
+    0.3098048282,
+    0.1638918986
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.1638918985978198,
+   "beta_D": 2.439496602956633,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    9,
+    "within-set",
+    0.6272088397,
+    0.3021687775
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.30216877747008836,
+   "beta_D": 1.8127833431180798,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "border-set",
+    0.4595606916,
+    0.180447878
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.180447878028538,
+   "beta_D": 1.7485948792866897,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "within-set",
+    0.3770189176,
+    0.1281508114
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.12815081139950693,
+   "beta_D": 3.149215372152108,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "border-set",
+    0.2668379117,
+    0.1741592719
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.1741592719027148,
+   "beta_D": 0.6694949953907493,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "within-set",
+    0.5632651254,
+    0.2159423245
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.21594232454076,
+   "beta_D": 1.526803525106974,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "border-set",
+    0.5615942798,
+    0.2354470427
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.23544704274454747,
+   "beta_D": 5.746307047109451,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "within-set",
+    0.4741605008,
+    0.2280325879
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.2280325879265835,
+   "beta_D": 3.036275227701626,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "border-set",
+    0.4554465618,
+    0.2192940726
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.21929407257297467,
+   "beta_D": 1.6170811346141771,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    10,
+    "within-set",
+    0.5597007446,
+    0.1718014076
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.1718014076377062,
+   "beta_D": 0.5029369405220562,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "border-set",
+    0.5270155939,
+    0.224545751
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.22454575097561053,
+   "beta_D": 3.268070923878254,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "within-set",
+    0.5851742861,
+    0.1593212671
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.159321267055494,
+   "beta_D": 0.7062615826267394,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "border-set",
+    0.5212611998,
+    0.1441493308
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.1441493308231701,
+   "beta_D": 2.6502581109377767,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "within-set",
+    0.5796044444,
+    0.1994484528
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.19944845282256338,
+   "beta_D": 0.5079012962694957,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "border-set",
+    0.5728971206,
+    0.1953736209
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.19537362094163643,
+   "beta_D": 0.7497568051798605,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "within-set",
+    0.7354253335,
+    0.1641907994
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.1641907994304789,
+   "beta_D": 3.778983952365221,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "border-set",
+    0.4652418787,
+    0.1769314969
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.17693149694575988,
+   "beta_D": 2.0344845675416594,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    11,
+    "within-set",
+    0.5485065873,
+    0.2201398941
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.2201398941174889,
+   "beta_D": 0.88027340833369,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "border-set",
+    0.4520106376,
+    0.113775815
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.11377581495234755,
+   "beta_D": 1.4873461054490673,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "within-set",
+    0.5673677635,
+    0.2221149629
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.22211496287741017,
+   "beta_D": 4.196067041022905,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "border-set",
+    0.6463908474,
+    0.1258074955
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.1258074954558362,
+   "beta_D": 0.45437670878976033,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "within-set",
+    0.5759848903,
+    0.1963947827
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.1963947826565795,
+   "beta_D": 2.0043795038464975,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "border-set",
+    0.6050891873,
+    0.2435765888
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.2435765888300603,
+   "beta_D": 4.605383626926314,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "within-set",
+    0.5824155371,
+    0.20619703
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.20619703000540207,
+   "beta_D": 2.456602711463422,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "border-set",
+    0.6196117707,
+    0.1986562647
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.1986562647369302,
+   "beta_D": 1.0220520392452206,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.1",
+    "lfr_mu0.1",
+    12,
+    "within-set",
+    0.5046580611,
+    0.2112618845
+   ],
+   "ds": "lfr_mu0.1",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.21126188454677972,
+   "beta_D": 1.4379567663701138,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "border-set",
+    0.6219007337,
+    0.2275430255
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.22754302552364053,
+   "beta_D": 3.709314750828663,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "within-set",
+    0.5326114813,
+    0.1903661082
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.19036610816469207,
+   "beta_D": 2.8768299346336264,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "border-set",
+    0.7211530889,
+    0.159576291
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.15957629102429507,
+   "beta_D": 0.14294447097012733,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "within-set",
+    0.800036621,
+    0.2054522029
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.20545220287106064,
+   "beta_D": 0.4801771576448375,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "border-set",
+    0.5110728423,
+    0.1302647266
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.13026472657287727,
+   "beta_D": 0.2647585858922159,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "within-set",
+    0.4480749459,
+    0.0746317981
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.07463179809248134,
+   "beta_D": 0.15531227687348176,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "border-set",
+    0.4354001864,
+    0.1924527906
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.1924527906270317,
+   "beta_D": 1.2821735405530028,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    7,
+    "within-set",
+    0.6523513457,
+    0.0991980475
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.09919804751055805,
+   "beta_D": 0.5557502743342033,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "border-set",
+    0.3466221021,
+    0.1296486408
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.12964864075519894,
+   "beta_D": 0.70365373974081,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "within-set",
+    0.3633337977,
+    0.2242267758
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.22422677583215703,
+   "beta_D": 2.6147743606895313,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "border-set",
+    0.3966297186,
+    0.1620249473
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.16202494729154146,
+   "beta_D": 1.9772677302128179,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "within-set",
+    0.5408801801,
+    0.1165886648
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.11658866476092264,
+   "beta_D": 0.43937073280852035,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "border-set",
+    0.5622564617,
+    0.2061972625
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.2061972625484446,
+   "beta_D": 1.807840444545983,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "within-set",
+    0.7832206201,
+    0.1165514108
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.11655141076661966,
+   "beta_D": 0.12656384121873798,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "border-set",
+    0.3151577821,
+    0.1732694505
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.17326945050249845,
+   "beta_D": 0.19367733196882553,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    8,
+    "within-set",
+    0.6292555298,
+    0.1568414614
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.1568414613897118,
+   "beta_D": 0.17142104317774126,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "border-set",
+    0.6735889424,
+    0.1413902918
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.14139029180888646,
+   "beta_D": 0.4488658586947832,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "within-set",
+    0.7279842014,
+    0.1608210788
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.16082107876673185,
+   "beta_D": 3.416906299120808,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "border-set",
+    0.5313516385,
+    0.156841518
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.15684151795222778,
+   "beta_D": 1.4159870067085825,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "within-set",
+    0.5275175971,
+    0.1356810819
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.13568108186100664,
+   "beta_D": 0.04588111598648513,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "border-set",
+    0.4750091344,
+    0.1463151968
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.14631519683189478,
+   "beta_D": 0.5682337440886716,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "within-set",
+    0.567486446,
+    0.2067518724
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.20675187240974438,
+   "beta_D": 0.1678223701212516,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "border-set",
+    0.4266936138,
+    0.1795232902
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.17952329022427246,
+   "beta_D": 1.8945054991681387,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    9,
+    "within-set",
+    0.4284669492,
+    0.1655007666
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.1655007665719329,
+   "beta_D": 3.6472032322791734,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "border-set",
+    0.2964569607,
+    0.304272721
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.3042727210359985,
+   "beta_D": 0.0,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "within-set",
+    0.7421870945,
+    0.2270420819
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.22704208188518074,
+   "beta_D": 4.940526486745159,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "border-set",
+    0.5758748132,
+    0.2667396305
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.2667396304888377,
+   "beta_D": 2.701054863507936,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "within-set",
+    0.6403084049,
+    0.1886514959
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.18865149592095745,
+   "beta_D": 3.301438456739012,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "border-set",
+    0.524928806,
+    0.1377279013
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.1377279013268232,
+   "beta_D": 0.02516824864583714,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "within-set",
+    0.6020349494,
+    0.2304422655
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.2304422654627089,
+   "beta_D": 1.2853216122179534,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "border-set",
+    0.5911838884,
+    0.1764424068
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.17644240676829154,
+   "beta_D": 0.059824741110686114,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    10,
+    "within-set",
+    0.4218909986,
+    0.0822315656
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.08223156556570238,
+   "beta_D": 0.7990998436724118,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "border-set",
+    0.5756734993,
+    0.2298285739
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.22982857388358569,
+   "beta_D": 1.958124711580371,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "within-set",
+    0.4404421736,
+    0.2358858355
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.23588583554305506,
+   "beta_D": 2.685066985889802,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "border-set",
+    0.4659173983,
+    0.1700233304
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.17002333037733078,
+   "beta_D": 0.1664084627577209,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "within-set",
+    0.6308977152,
+    0.2048576027
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.20485760270247103,
+   "beta_D": 2.478500565004897,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "border-set",
+    0.5630450563,
+    0.1435827147
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.14358271469184286,
+   "beta_D": 2.909275385376797,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "within-set",
+    0.6253511759,
+    0.1720798694
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.17207986935715766,
+   "beta_D": 1.6736151287335512,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "border-set",
+    0.589951512,
+    0.2569210887
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.25692108869105196,
+   "beta_D": 2.0915630905834037,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    11,
+    "within-set",
+    0.4948301237,
+    0.2252467307
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.22524673072919843,
+   "beta_D": 3.1937745585456208,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "border-set",
+    0.5450842617,
+    0.1123142547
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.11231425467385049,
+   "beta_D": 2.090119874621484,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "within-set",
+    0.6180272285,
+    0.2070376959
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.20703769585892653,
+   "beta_D": 4.458104378836548,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "border-set",
+    0.5030546135,
+    0.1828856901
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.18288569014955808,
+   "beta_D": 0.48799683895818935,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "within-set",
+    0.6968185518,
+    0.1709482829
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.17094828290807404,
+   "beta_D": 3.3425651797144833,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "border-set",
+    0.5367918347,
+    0.1735735643
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.17357356428496198,
+   "beta_D": 1.4488973093890736,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "within-set",
+    0.6575370724,
+    0.2446391878
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.2446391877930556,
+   "beta_D": 1.3556485210191567,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "border-set",
+    0.6362329836,
+    0.1759683463
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.17596834628193553,
+   "beta_D": 0.6075060535413502,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.3",
+    "lfr_mu0.3",
+    12,
+    "within-set",
+    0.5455879026,
+    0.1956532239
+   ],
+   "ds": "lfr_mu0.3",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.19565322392301077,
+   "beta_D": 1.60719559593067,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "border-set",
+    0.4151875313,
+    0.2046958752
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.20469587516273216,
+   "beta_D": 3.3221718001175797,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "within-set",
+    0.6828370745,
+    0.1161429565
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.11614295648569387,
+   "beta_D": 0.3086440997593802,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "border-set",
+    0.6962030979,
+    0.1008518159
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.10085181586808815,
+   "beta_D": 0.562369708855862,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "within-set",
+    0.5034304981,
+    0.2111125369
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.2111125368617283,
+   "beta_D": 1.9585813257512574,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "border-set",
+    0.6875399517,
+    0.0732406032
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.07324060321757904,
+   "beta_D": 0.12528751904003357,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "within-set",
+    0.7259030682,
+    0.1168491851
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.11684918507992402,
+   "beta_D": 1.0289928409983418,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "border-set",
+    0.5752325959,
+    0.1459942168
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "border-set",
+   "F": 0.14599421680109517,
+   "beta_D": 1.5017458533490415,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    7,
+    "within-set",
+    0.7187328456,
+    0.095388793
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 7,
+   "kind": "within-set",
+   "F": 0.09538879299814616,
+   "beta_D": 0.6301203909478461,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "border-set",
+    0.252489018,
+    0.296743801
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.2967438010141773,
+   "beta_D": 0.0,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "within-set",
+    0.5999460092,
+    0.2177926065
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.21779260648822946,
+   "beta_D": 2.790396890342215,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "border-set",
+    0.5000588987,
+    0.1547988813
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.15479888129184313,
+   "beta_D": 0.8398522270051162,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "within-set",
+    0.5647251154,
+    0.1146978933
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.11469789331162109,
+   "beta_D": 1.2922218135496546,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "border-set",
+    0.5486201129,
+    0.1577315385
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.15773153850208588,
+   "beta_D": 2.5729840822235226,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "within-set",
+    0.6404163432,
+    0.1268995599
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.1268995598538434,
+   "beta_D": 0.5616555018515781,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "border-set",
+    0.5287615395,
+    0.1860257751
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "border-set",
+   "F": 0.18602577512852278,
+   "beta_D": 0.33856849229530794,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    8,
+    "within-set",
+    0.7706818054,
+    0.166232575
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 8,
+   "kind": "within-set",
+   "F": 0.1662325749782472,
+   "beta_D": 0.2847679208326398,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "border-set",
+    0.4453261831,
+    0.0807902805
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.08079028052121066,
+   "beta_D": 0.10279238726732431,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "within-set",
+    0.4288240572,
+    0.1661196586
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.1661196585864954,
+   "beta_D": 0.3304367625439968,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "border-set",
+    0.4133281921,
+    0.1935158676
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.19351586755553943,
+   "beta_D": 3.155396903168546,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "within-set",
+    0.4512962796,
+    0.1174211982
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.11742119815460773,
+   "beta_D": 2.309732036087405,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "border-set",
+    0.4266667418,
+    0.1423163759
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.14231637594763547,
+   "beta_D": 4.4220048827472285,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "within-set",
+    0.6683321551,
+    0.2109114233
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.21091142334512103,
+   "beta_D": 2.372004613789687,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "border-set",
+    0.5024287984,
+    0.1861728933
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "border-set",
+   "F": 0.18617289330509637,
+   "beta_D": 3.288670057967758,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    9,
+    "within-set",
+    0.7873910927,
+    0.1671596575
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 9,
+   "kind": "within-set",
+   "F": 0.1671596575110546,
+   "beta_D": 0.1469877781633054,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "border-set",
+    0.472887856,
+    0.1590507173
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.1590507172992886,
+   "beta_D": 2.6241774393578168,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "within-set",
+    0.5012009822,
+    0.1599697289
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.15996972888753724,
+   "beta_D": 2.7408674588660387,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "border-set",
+    0.44496318,
+    0.1887141697
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.18871416967452267,
+   "beta_D": 0.11929967901691799,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "within-set",
+    0.549738161,
+    0.147001778
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.14700177796379882,
+   "beta_D": 1.4047814727108408,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "border-set",
+    0.4187119425,
+    0.2447656466
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.244765646643735,
+   "beta_D": 3.9055001284930064,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "within-set",
+    0.5918239365,
+    0.1337093965
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.13370939653748518,
+   "beta_D": 1.4895456689771753,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "border-set",
+    0.4149634176,
+    0.1616046691
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "border-set",
+   "F": 0.16160466914820604,
+   "beta_D": 4.892524193407125,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    10,
+    "within-set",
+    0.6285921408,
+    0.1793553569
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 10,
+   "kind": "within-set",
+   "F": 0.17935535691638183,
+   "beta_D": 1.9849180249489078,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "border-set",
+    0.4756320867,
+    0.2231121327
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.22311213265434388,
+   "beta_D": 5.397408858080141,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "within-set",
+    0.4259977658,
+    0.1201307206
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.12013072056772281,
+   "beta_D": 0.6356386615457534,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "border-set",
+    0.3559882772,
+    0.1576685197
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.1576685197199256,
+   "beta_D": 1.3270950270598234,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "within-set",
+    0.5061662836,
+    0.2469594506
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.2469594506018843,
+   "beta_D": 2.259695420614582,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "border-set",
+    0.5101022081,
+    0.1119251441
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.11192514406273733,
+   "beta_D": 1.0300001045282197,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "within-set",
+    0.5155495295,
+    0.2536157351
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.2536157351324632,
+   "beta_D": 0.04965738471469587,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "border-set",
+    0.4404801802,
+    0.1987733184
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "border-set",
+   "F": 0.19877331835566417,
+   "beta_D": 3.9650284391861277,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    11,
+    "within-set",
+    0.6626396638,
+    0.11116795
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 11,
+   "kind": "within-set",
+   "F": 0.11116795004233142,
+   "beta_D": 0.12087903189689561,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "border-set",
+    0.4478615357,
+    0.2347522964
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.23475229644955586,
+   "beta_D": 3.8141130919936375,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "within-set",
+    0.4593854434,
+    0.2149667316
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.2149667315927078,
+   "beta_D": 3.985571395597149,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "border-set",
+    0.6242195866,
+    0.187776708
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.18777670800404964,
+   "beta_D": 3.026477610808888,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "within-set",
+    0.572286762,
+    0.1169243855
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.11692438553152716,
+   "beta_D": 0.03212509897330164,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "border-set",
+    0.452426276,
+    0.1628929117
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.1628929117352784,
+   "beta_D": 3.9492802962811315,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "within-set",
+    0.6555810255,
+    0.1383981058
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.13839810580788905,
+   "beta_D": 2.5175963534230896,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "border-set",
+    0.5412822159,
+    0.2156261065
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "border-set",
+   "F": 0.21562610653062975,
+   "beta_D": 1.5530306760334938,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E6_lfr_mu0.5",
+    "lfr_mu0.5",
+    12,
+    "within-set",
+    0.6026697315,
+    0.193499639
+   ],
+   "ds": "lfr_mu0.5",
+   "n": 12,
+   "kind": "within-set",
+   "F": 0.1934996389619869,
+   "beta_D": 4.0071313751062965,
+   "predicted_quantum_win": true
+  }
+ ],
+ "predicted_wins": 130,
+ "predicted_wins_by_network": {
+  "karate": 29,
+  "lesmis": 13,
+  "lfr_mu0.1": 30,
+  "lfr_mu0.3": 27,
+  "lfr_mu0.5": 31
+ }
+}

@@ -1,0 +1,25 @@
+858 field-free instances; 0 unmatched; 0 G1 rows left over
+1/858 done (P3_roi_FC100 n=10, 51s)
+51/858 done (P3_roi_SC100 n=10, 50s)
+101/858 done (P2_split_FC400 n=10, 51s)
+151/858 done (P3_roi_FC200 n=9, 10s)
+201/858 done (P3_roi_SC200 n=9, 8s)
+251/858 done (P3_roi_FC100 n=8, 175s)
+301/858 done (P3_roi_SC100 n=8, 235s)
+351/858 done (P3_roi_FC100 n=7, 23s)
+401/858 done (P3_roi_SC100 n=7, 25s)
+451/858 done (P2_split_FC400 n=7, 40s)
+501/858 done (P3_roi_FC200 n=6, 169s)
+551/858 done (P3_roi_SC200 n=6, 133s)
+601/858 done (P3_canonical n=6, 174s)
+651/858 done (P3_roi_SC100 n=5, 11s)
+701/858 done (P2_split_FC400 n=5, 12s)
+751/858 done (P3_canonical n=5, 12s)
+801/858 done (P3_roi_SC200 n=4, 1s)
+851/858 done (P2_split_SC100 n=4, 1s)
+done
+
+real	131m5.655s
+user	980m16.819s
+sys	8m25.921s
+exit 0

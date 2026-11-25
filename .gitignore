@@ -1,0 +1,53 @@
+# This repository is the code and data archive of the paper: code, input data, stored results and the analysis plans
+# fixed before each study. Everything else in the working folder (manuscript, figures, reports, audits, literature
+# review, planning documents, local build targets) is kept local. The list below is therefore a whitelist: ignore
+# everything at the top level, then re-include what belongs to the archive.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/LICENSE-docs.md
+!/CITATION.cff
+!/.zenodo.json
+!/Makefile
+!/pyproject.toml
+!/requirements.txt
+!/requirements-hardware.txt
+!/qsr2/
+!/experiments/
+!/hardware/
+!/tests/
+!/data/
+!/results/
+!/docs/
+
+# from docs/, only the analysis plans (protocols); their SHA-256 fingerprints are in results/*_prereg_hashes.txt
+/docs/*
+!/docs/*_protocol_*.md
+
+# Python caches and environments (numba's on-disk cache also lives in __pycache__/)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# credentials are kept outside the repository (~/.qiskit); never commit them
+qiskit-ibm.json
+.qiskit/
+.env
+*.pem
+
+# editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

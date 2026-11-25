@@ -1,0 +1,373 @@
+{
+ "tag": "dry",
+ "instances": [
+  {
+   "rank": 1,
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    8,
+    "within-set",
+    0.089363996,
+    0.1314762767
+   ],
+   "backend": "ibm_kingston",
+   "transpile": {
+    "seed_transpiler": 8,
+    "seed_trials_2q": [
+     212,
+     208,
+     219,
+     214,
+     209,
+     219,
+     205,
+     203,
+     198,
+     214
+    ],
+    "layout": [
+     22,
+     23,
+     21,
+     16,
+     3,
+     4,
+     2,
+     1
+    ],
+    "two_qubit_count_min_max": [
+     203,
+     203
+    ],
+    "depth_max": 363,
+    "active_qubits_max": 8,
+    "backend": "ibm_kingston",
+    "two_qubit_gate": "cz"
+   },
+   "usage_quantum_seconds": null,
+   "job_id": null,
+   "shots_per_row": 2000,
+   "gap_ideal": 0.07883720036955155,
+   "gap_ideal_selection_file": 0.07883720036954256,
+   "ideal_stationary_TV_check": 2.4135747975365825e-15,
+   "gap_oracle": 0.012637123324062638,
+   "oracle_chain": "uniform",
+   "gap_quench_ideal": 0.07378357782528855,
+   "gaps_classical": {
+    "local": 0.002053976072337149,
+    "label_swap": 0.001026988036168075,
+    "uniform": 0.012637123324062638,
+    "sw": 0.002257440328624516,
+    "wolff": 0.004471363713798193,
+    "heat_bath_per_cost": 0.0078125
+   },
+   "gap_hw": 0.07003605047319439,
+   "retention": 0.8883629827657308,
+   "advantage": 5.542088074731148,
+   "advantage_ideal": 6.238540081304407,
+   "stationary_TV_to_gibbs": 0.018501147614484636,
+   "coassign_max_err": 0.018386669300845093,
+   "coassign_mean_err": 0.004780988501027543,
+   "hastings_gap": 0.0704074295045023,
+   "hastings_retention": 0.8930736907762519,
+   "hastings_advantage": 5.571476015466105,
+   "hastings_stationary_TV_check": 4.7750406286003946e-15,
+   "row_TV_mean": 0.14161896338270524,
+   "transpose_asym_rel": 0.2501796671971142,
+   "gibbs": {
+    "p_max": 0.6182182289164164,
+    "n_eff": 2.042406023811839
+   },
+   "finite_shot_null": {
+    "retention": [
+     0.9337299208685191,
+     0.9965638250732723,
+     1.0778458339140404
+    ],
+    "coassign_max_err": [
+     0.001960043368316668,
+     0.012350666233188978,
+     0.029259956247737667
+    ],
+    "row_TV": [
+     0.08704536614516831,
+     0.08813392595014594,
+     0.08923687163043917
+    ],
+    "transpose_asym": [
+     0.20307304325305642,
+     0.20784101184181414,
+     0.211897304137998
+    ]
+   },
+   "bootstrap_95": {
+    "retention": [
+     0.8026991099757297,
+     0.8841792403101234,
+     0.9524171497799295
+    ],
+    "advantage": [
+     5.007670570810964,
+     5.5159876297319865,
+     5.941692563023794
+    ],
+    "coassign_max_err": [
+     0.002959681651973091,
+     0.02203890739064368,
+     0.05390650166418539
+    ]
+   },
+   "H1_retention": true,
+   "H2_advantage": true,
+   "H3_bias": true,
+   "all_criteria": true
+  },
+  {
+   "rank": 2,
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    8,
+    "within-set",
+    0.0856249985,
+    0.1812301266
+   ],
+   "backend": "ibm_kingston",
+   "transpile": {
+    "seed_transpiler": 8,
+    "seed_trials_2q": [
+     212,
+     208,
+     219,
+     214,
+     209,
+     219,
+     205,
+     203,
+     198,
+     214
+    ],
+    "layout": [
+     22,
+     23,
+     21,
+     16,
+     3,
+     4,
+     2,
+     1
+    ],
+    "two_qubit_count_min_max": [
+     203,
+     203
+    ],
+    "depth_max": 361,
+    "active_qubits_max": 8,
+    "backend": "ibm_kingston",
+    "two_qubit_gate": "cz"
+   },
+   "usage_quantum_seconds": null,
+   "job_id": null,
+   "shots_per_row": 2000,
+   "gap_ideal": 0.05752889205249112,
+   "gap_ideal_selection_file": 0.0575288920524899,
+   "ideal_stationary_TV_check": 1.7452191821000216e-15,
+   "gap_oracle": 0.016166935534761784,
+   "oracle_chain": "uniform",
+   "gap_quench_ideal": 0.10071718868340329,
+   "gaps_classical": {
+    "local": 0.0003165694300177879,
+    "label_swap": 0.0001582847150095601,
+    "uniform": 0.016166935534761784,
+    "sw": 0.0012397281986598063,
+    "wolff": 0.0024475404419576074,
+    "heat_bath_per_cost": 0.0078125
+   },
+   "gap_hw": 0.05066243200145881,
+   "retention": 0.8806432766901344,
+   "advantage": 3.1337065637780013,
+   "advantage_ideal": 3.558428987905208,
+   "stationary_TV_to_gibbs": 0.02482957981093814,
+   "coassign_max_err": 0.023788650210119555,
+   "coassign_mean_err": 0.009943624540609892,
+   "hastings_gap": 0.04939885106729358,
+   "hastings_retention": 0.8586789925003346,
+   "hastings_advantage": 3.0555482182184295,
+   "hastings_stationary_TV_check": 4.1998198115162945e-15,
+   "row_TV_mean": 0.14217999738942694,
+   "transpose_asym_rel": 0.24854518895290684,
+   "gibbs": {
+    "p_max": 0.4832393859183454,
+    "n_eff": 3.223061340571106
+   },
+   "finite_shot_null": {
+    "retention": [
+     0.8980724385614252,
+     0.9989315271666825,
+     1.1041605602157332
+    ],
+    "coassign_max_err": [
+     0.0055895996783698,
+     0.01928568334128733,
+     0.044341362416476945
+    ],
+    "row_TV": [
+     0.08514335219005376,
+     0.08615776858599203,
+     0.08718716023862395
+    ],
+    "transpose_asym": [
+     0.20151385413147074,
+     0.20613168903832696,
+     0.21135812275842664
+    ]
+   },
+   "bootstrap_95": {
+    "retention": [
+     0.8026031201567668,
+     0.8802927148016195,
+     0.9762945191325644
+    ],
+    "advantage": [
+     2.856006208549006,
+     3.1324591141918554,
+     3.474074717614293
+    ],
+    "coassign_max_err": [
+     0.011880585824256417,
+     0.02899408074303178,
+     0.06343997694963603
+    ]
+   },
+   "H1_retention": true,
+   "H2_advantage": true,
+   "H3_bias": true,
+   "all_criteria": true
+  },
+  {
+   "rank": 3,
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    8,
+    "within-set",
+    0.0685417006,
+    0.1857604224
+   ],
+   "backend": "ibm_kingston",
+   "transpile": {
+    "seed_transpiler": 8,
+    "seed_trials_2q": [
+     212,
+     208,
+     219,
+     214,
+     209,
+     219,
+     205,
+     203,
+     198,
+     214
+    ],
+    "layout": [
+     22,
+     23,
+     21,
+     16,
+     3,
+     4,
+     2,
+     1
+    ],
+    "two_qubit_count_min_max": [
+     203,
+     203
+    ],
+    "depth_max": 361,
+    "active_qubits_max": 8,
+    "backend": "ibm_kingston",
+    "two_qubit_gate": "cz"
+   },
+   "usage_quantum_seconds": null,
+   "job_id": null,
+   "shots_per_row": 2000,
+   "gap_ideal": 0.08703328091234908,
+   "gap_ideal_selection_file": 0.08703328091235252,
+   "ideal_stationary_TV_check": 1.950552737659827e-15,
+   "gap_oracle": 0.020500541961897323,
+   "oracle_chain": "local",
+   "gap_quench_ideal": 0.08398829112914052,
+   "gaps_classical": {
+    "local": 0.020500541961897323,
+    "label_swap": 0.010250270980948661,
+    "uniform": 0.0191882344286195,
+    "sw": 0.001374913700387892,
+    "wolff": 0.002723931316155115,
+    "heat_bath_per_cost": 0.0078125
+   },
+   "gap_hw": 0.0951036008468169,
+   "retention": 1.0927268264492456,
+   "advantage": 4.639077397250189,
+   "advantage_ideal": 4.245413661458839,
+   "stationary_TV_to_gibbs": 0.013313733079154396,
+   "coassign_max_err": 0.009016812330416735,
+   "coassign_mean_err": 0.0032080510514484483,
+   "hastings_gap": 0.0954935038941448,
+   "hastings_retention": 1.0972067569222856,
+   "hastings_advantage": 4.658096555282818,
+   "hastings_stationary_TV_check": 2.731626999954633e-15,
+   "row_TV_mean": 0.14074794619689335,
+   "transpose_asym_rel": 0.2522563168074933,
+   "gibbs": {
+    "p_max": 0.4071505395174736,
+    "n_eff": 3.6778145373387052
+   },
+   "finite_shot_null": {
+    "retention": [
+     0.9601090387656219,
+     0.9978919139029366,
+     1.033203157286241
+    ],
+    "coassign_max_err": [
+     0.00327293249218646,
+     0.012963579454421281,
+     0.03445260328842374
+    ],
+    "row_TV": [
+     0.08639011969328708,
+     0.08776172513808406,
+     0.08867810752139973
+    ],
+    "transpose_asym": [
+     0.20152590873469586,
+     0.2066617892378627,
+     0.21125897132871518
+    ]
+   },
+   "bootstrap_95": {
+    "retention": [
+     1.0519331481051946,
+     1.0892991603444773,
+     1.122021109953766
+    ],
+    "advantage": [
+     4.465891357907196,
+     4.624525536742086,
+     4.763443748642928
+    ],
+    "coassign_max_err": [
+     0.006086447523254952,
+     0.015971951517592425,
+     0.037452715065149716
+    ]
+   },
+   "H1_retention": true,
+   "H2_advantage": true,
+   "H3_bias": true,
+   "all_criteria": true
+  }
+ ],
+ "instances_meeting_all_criteria": 3,
+ "E5_success": true
+}

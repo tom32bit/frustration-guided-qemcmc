@@ -1,0 +1,6 @@
+# Additional packages for hardware/ (IBM Quantum runs) and the circuit tests.
+qiskit==2.6.2
+qiskit-ibm-runtime==0.52.1
+qiskit-aer==0.17.2
+pennylane==0.42.3
+pennylane-lightning==0.42.0

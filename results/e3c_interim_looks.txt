@@ -1,0 +1,5 @@
+2026-11-22 16:19:34 +0600  Unplanned DESCRIPTIVE look at 23/48 study rows (FC 12 pairs, SC 11), taken for a progress
+  update. Computed by a throwaway script that writes nothing to results/. No change to design, sample size, stopping or
+  analysis: the run continues to all 48 rows and the pre-registered e3c_analyze.py decides endpoint C.
+  Interim (not the endpoint): FC dr +0.43 [-0.10, +1.07], r13 +4.34 [+2.74, +5.81]; SC dr +1.26 [-0.23, +2.59],
+  r13 +2.13 [+0.39, +3.93]; routing r13>0: predicted-win 12/12, rest 5/11. All 23 rows finite and positive.

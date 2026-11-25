@@ -1,0 +1,286 @@
+{
+ "rows": 236,
+ "instances_sealed": 236,
+ "routing_written_at": "2026-11-22T22:20:27+06:00",
+ "rows_when_routing_written": 0,
+ "projection_written_at": "2026-11-23T01:41:48+06:00",
+ "projection_rows_by_size_when_written": {
+  "7": 40,
+  "8": 40,
+  "9": 40,
+  "10": 40
+ },
+ "E6A": {
+  "predicted_win": {
+   "instances": 130,
+   "wins": 125
+  },
+  "rest": {
+   "instances": 106,
+   "wins": 54
+  },
+  "fisher_one_sided_p": 6.60412553828623e-17,
+  "pass": true
+ },
+ "E6B": {
+  "mean_r_predicted_win": {
+   "mean": 2.3625866036809993,
+   "ci95": [
+    2.1809580789942227,
+    2.537462493816788
+   ],
+   "n": 130
+  },
+  "pass": true
+ },
+ "E6_pass": true,
+ "E6C": {
+  "all_r": {
+   "slope": 0.523912535009455,
+   "slope_ci95": [
+    0.33924622089880196,
+    0.7115440091409421
+   ],
+   "targets": {
+    "11": {
+     "observed_mean": 2.1206760160593574,
+     "instances": 39,
+     "expected_instances": 39,
+     "point": 2.20243543519346,
+     "pi95": [
+      1.2162991991460177,
+      2.8303212470738024
+     ],
+     "inside": true,
+     "error": -0.08175941913410245
+    },
+    "12": {
+     "observed_mean": 2.104685187061378,
+     "instances": 37,
+     "expected_instances": 37,
+     "point": 2.7263479702029145,
+     "pi95": [
+      1.6116238976823167,
+      3.5021759564469233
+     ],
+     "inside": true,
+     "error": -0.6216627831415367
+    }
+   },
+   "all_inside": true
+  },
+  "all_s2": {
+   "slope": 0.26029092709698176,
+   "slope_ci95": [
+    0.04234767949855173,
+    0.48257696010798373
+   ],
+   "targets": {
+    "11": {
+     "observed_mean": 1.0895462160081395,
+     "instances": 39,
+     "expected_instances": 39,
+     "point": 1.3178734404833095,
+     "pi95": [
+      0.31791936432119694,
+      2.139110706071096
+     ],
+     "inside": true,
+     "error": -0.22832722447516995
+    },
+    "12": {
+     "observed_mean": 0.8155430840109161,
+     "instances": 37,
+     "expected_instances": 37,
+     "point": 1.5781643675802912,
+     "pi95": [
+      0.45197846219072757,
+      2.5975853841180525
+     ],
+     "inside": true,
+     "error": -0.7626212835693751
+    }
+   },
+   "all_inside": true
+  },
+  "predicted_win_r": {
+   "slope": 0.5403331108672373,
+   "slope_ci95": [
+    0.36734047677362175,
+    0.7207895463502813
+   ],
+   "targets": {
+    "11": {
+     "observed_mean": 2.982360336990456,
+     "instances": 25,
+     "expected_instances": 25,
+     "point": 3.1844867425906154,
+     "pi95": [
+      2.4617389150466025,
+      3.694729484968379
+     ],
+     "inside": true,
+     "error": -0.2021264056001595
+    },
+    "12": {
+     "observed_mean": 3.1306576052181136,
+     "instances": 24,
+     "expected_instances": 24,
+     "point": 3.724819853457853,
+     "pi95": [
+      2.8649584708193068,
+      4.377935961401078
+     ],
+     "inside": true,
+     "error": -0.5941622482397393
+    }
+   },
+   "all_inside": true
+  },
+  "predicted_win_s2": {
+   "slope": 0.1566816093894786,
+   "slope_ci95": [
+    -0.09363844226739758,
+    0.40911067398958734
+   ],
+   "targets": {
+    "11": {
+     "observed_mean": 2.023502846816591,
+     "instances": 25,
+     "expected_instances": 25,
+     "point": 2.0739713139783587,
+     "pi95": [
+      1.048893053110661,
+      2.982825294278385
+     ],
+     "inside": true,
+     "error": -0.05046846716176745
+    },
+    "12": {
+     "observed_mean": 1.5258469856747576,
+     "instances": 24,
+     "expected_instances": 24,
+     "point": 2.230652923367837,
+     "pi95": [
+      1.0302710874380554,
+      3.3223335524465902
+     ],
+     "inside": true,
+     "error": -0.7048059376930793
+    }
+   },
+   "all_inside": true
+  }
+ },
+ "E6C_pass": true,
+ "by_network": {
+  "karate": {
+   "instances": 44,
+   "predicted_wins": 29,
+   "wins_in_predicted": 28,
+   "wins_in_rest": 8,
+   "mean_r_predicted": 2.1589069148206943,
+   "mean_r_rest": -0.03614384804900024,
+   "spearman_F_r": 0.6111346018322762
+  },
+  "lesmis": {
+   "instances": 48,
+   "predicted_wins": 13,
+   "wins_in_predicted": 11,
+   "wins_in_rest": 17,
+   "mean_r_predicted": 1.700912155556823,
+   "mean_r_rest": -0.3911777151567928,
+   "spearman_F_r": 0.6749891445940078
+  },
+  "lfr_mu0.1": {
+   "instances": 48,
+   "predicted_wins": 30,
+   "wins_in_predicted": 30,
+   "wins_in_rest": 13,
+   "mean_r_predicted": 2.519985872247103,
+   "mean_r_rest": 0.7846055278190639,
+   "spearman_F_r": 0.3556231003039514
+  },
+  "lfr_mu0.3": {
+   "instances": 48,
+   "predicted_wins": 27,
+   "wins_in_predicted": 27,
+   "wins_in_rest": 9,
+   "mean_r_predicted": 2.614519442259793,
+   "mean_r_rest": 0.10275664169714449,
+   "spearman_F_r": 0.5603560573165437
+  },
+  "lfr_mu0.5": {
+   "instances": 48,
+   "predicted_wins": 31,
+   "wins_in_predicted": 29,
+   "wins_in_rest": 7,
+   "mean_r_predicted": 2.4588548005826945,
+   "mean_r_rest": -0.339958678172474,
+   "spearman_F_r": 0.6440512375162831
+  }
+ },
+ "spearman_F_r_pooled": 0.6119972428526432,
+ "qaoa_a0_r_predicted_win": {
+  "mean": 1.4432123217562742,
+  "ci95": [
+   1.2180121934285473,
+   1.662143063354162
+  ],
+  "n": 130
+ },
+ "s2_ratio_predicted_win": {
+  "mean": 1.7388984300954842,
+  "ci95": [
+   1.4889822340913634,
+   1.994543008506911
+  ],
+  "n": 130
+ },
+ "beta2_r_predicted_win": {
+  "mean": 3.8657026109669363,
+  "ci95": [
+   3.759466860491251,
+   3.9708891706064438
+  ],
+  "n": 130
+ },
+ "by_size": {
+  "7": {
+   "instances": 40,
+   "mean_r": -0.01930494551265225,
+   "mean_r_predicted_win": 0.9041088010328708,
+   "predicted_wins": 16
+  },
+  "8": {
+   "instances": 40,
+   "mean_r": 0.7195643112783583,
+   "mean_r_predicted_win": 1.6560597023579104,
+   "predicted_wins": 17
+  },
+  "9": {
+   "instances": 40,
+   "mean_r": 1.3551481249529267,
+   "mean_r_predicted_win": 2.2154173020611823,
+   "predicted_wins": 23
+  },
+  "10": {
+   "instances": 40,
+   "mean_r": 1.5152088999606745,
+   "mean_r_predicted_win": 2.5547245529806437,
+   "predicted_wins": 25
+  },
+  "11": {
+   "instances": 39,
+   "mean_r": 2.1206760160593574,
+   "mean_r_predicted_win": 2.982360336990456,
+   "predicted_wins": 25
+  },
+  "12": {
+   "instances": 37,
+   "mean_r": 2.104685187061378,
+   "mean_r_predicted_win": 3.1306576052181136,
+   "predicted_wins": 24
+  }
+ }
+}

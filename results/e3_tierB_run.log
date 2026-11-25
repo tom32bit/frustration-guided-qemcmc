@@ -1,0 +1,61 @@
+16 Tier B instances for n in [12], C=8, T=1000 (0 already done)
+1/16 done (P3_roi_FC400 n=12, quantum 357s, elapsed 7 min)
+2/16 done (P3_roi_FC200 n=12, quantum 358s, elapsed 7 min)
+3/16 done (P3_roi_FC400 n=12, quantum 361s, elapsed 8 min)
+4/16 done (P3_roi_FC200 n=12, quantum 376s, elapsed 8 min)
+5/16 done (P3_roi_FC400 n=12, quantum 377s, elapsed 8 min)
+6/16 done (P3_roi_FC200 n=12, quantum 385s, elapsed 8 min)
+7/16 done (P3_roi_FC200 n=12, quantum 405s, elapsed 8 min)
+8/16 done (P3_roi_FC400 n=12, quantum 407s, elapsed 8 min)
+9/16 done (P3_roi_SC200 n=12, quantum 367s, elapsed 15 min)
+10/16 done (P3_roi_SC400 n=12, quantum 345s, elapsed 15 min)
+11/16 done (P3_roi_SC200 n=12, quantum 361s, elapsed 15 min)
+12/16 done (P3_roi_SC200 n=12, quantum 356s, elapsed 15 min)
+13/16 done (P3_roi_SC400 n=12, quantum 324s, elapsed 15 min)
+14/16 done (P3_roi_SC400 n=12, quantum 355s, elapsed 15 min)
+15/16 done (P3_roi_SC200 n=12, quantum 359s, elapsed 15 min)
+16/16 done (P3_roi_SC400 n=12, quantum 340s, elapsed 15 min)
+done
+
+real	15m47.349s
+user	110m21.601s
+sys	0m9.184s
+exit 0 (12 8 8 1000)
+16 Tier B instances for n in [14], C=8, T=1000 (16 already done)
+1/16 done (P3_roi_FC400 n=14, quantum 1850s, elapsed 33 min)
+2/16 done (P3_roi_FC200 n=14, quantum 1861s, elapsed 33 min)
+3/16 done (P3_roi_FC400 n=14, quantum 1868s, elapsed 33 min)
+4/16 done (P3_roi_FC400 n=14, quantum 1886s, elapsed 33 min)
+5/16 done (P3_roi_FC200 n=14, quantum 1898s, elapsed 33 min)
+6/16 done (P3_roi_FC200 n=14, quantum 1916s, elapsed 34 min)
+7/16 done (P3_roi_FC200 n=14, quantum 1952s, elapsed 34 min)
+8/16 done (P3_roi_FC400 n=14, quantum 1959s, elapsed 34 min)
+9/16 done (P3_roi_SC400 n=14, quantum 1771s, elapsed 64 min)
+10/16 done (P3_roi_SC200 n=14, quantum 1942s, elapsed 67 min)
+11/16 done (P3_roi_SC200 n=14, quantum 1927s, elapsed 67 min)
+12/16 done (P3_roi_SC400 n=14, quantum 1962s, elapsed 68 min)
+13/16 done (P3_roi_SC400 n=14, quantum 1936s, elapsed 68 min)
+14/16 done (P3_roi_SC400 n=14, quantum 1938s, elapsed 68 min)
+15/16 done (P3_roi_SC200 n=14, quantum 2077s, elapsed 69 min)
+16/16 done (P3_roi_SC200 n=14, quantum 2057s, elapsed 69 min)
+done
+
+real	69m46.096s
+user	530m20.768s
+sys	0m18.845s
+exit 0 (14 8 8 1000)
+8 Tier B instances for n in [16], C=4, T=1000 (32 already done)
+1/8 done (P3_roi_FC400 n=16, quantum 5265s, elapsed 89 min)
+2/8 done (P3_roi_SC400 n=16, quantum 5282s, elapsed 89 min)
+3/8 done (P3_roi_FC400 n=16, quantum 5315s, elapsed 90 min)
+4/8 done (P3_roi_SC200 n=16, quantum 5313s, elapsed 90 min)
+5/8 done (P3_roi_FC200 n=16, quantum 5389s, elapsed 91 min)
+6/8 done (P3_roi_SC400 n=16, quantum 5423s, elapsed 92 min)
+7/8 done (P3_roi_FC200 n=16, quantum 5543s, elapsed 94 min)
+8/8 done (P3_roi_SC200 n=16, quantum 5631s, elapsed 95 min)
+done
+
+real	95m33.635s
+user	713m36.578s
+sys	0m25.248s
+exit 0 (16 8 4 1000)

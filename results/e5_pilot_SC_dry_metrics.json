@@ -1,0 +1,49 @@
+{
+ "modality": "SC",
+ "tag": "dry",
+ "backend": "ibm_kingston",
+ "transpile": {
+  "backend": "ibm_kingston",
+  "median_2q_error": 0.0019068199226272564,
+  "two_qubit_gate": "cz",
+  "layout": [
+   2,
+   3,
+   1,
+   4,
+   16,
+   23
+  ],
+  "two_qubit_count_min_max": [
+   105,
+   105
+  ],
+  "depth_max": 246,
+  "active_qubits_max": 6
+ },
+ "angle_index": 0,
+ "usage_quantum_seconds": null,
+ "row_TV_mean": 0.10685306126041774,
+ "row_TV_finite_shot_floor": 0.05887663309091677,
+ "flip_asym_TV_mean": 0.089734375,
+ "flip_asym_floor": 0.082078125,
+ "transpose_asym_rel": 0.15785576082136593,
+ "transpose_asym_floor": 0.1389205879637913,
+ "stationary_TV_to_gibbs": 0.0062897698416655885,
+ "coassignment_max_abs_error": 0.006213827418913409,
+ "coassignment_mean_abs_error": 0.002166321186662849,
+ "partition_space_gaps": {
+  "hardware_qaoa": 0.09464,
+  "ideal_qaoa": 0.09627,
+  "ideal_quench": 0.07934,
+  "local": 0.07161,
+  "label_swap": 0.0358,
+  "uniform": 0.04795,
+  "sw": 0.02297,
+  "wolff": 0.04577,
+  "heat_bath_per_cost": 0.03125,
+  "classical_oracle": 0.07161
+ },
+ "hardware_over_ideal_qaoa": 0.9830335540215435,
+ "hardware_over_classical_oracle": 1.3216066446985328
+}

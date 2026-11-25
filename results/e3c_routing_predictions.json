@@ -1,0 +1,730 @@
+{
+ "rule": "E3c: SEALED two-factor routing predictions for the n = 13 nested-growth instances, computed from instance data\nonly (couplings, sigma, F) BEFORE any E3c study row exists. Same rule and thresholds as E3 amendment 13:\n  predicted quantum win  <=>  F >= 0.10  and  beta * D >= 1   (beta = 1 / sigma_ROI, beta_tilde = 1)\nWrites results/e3c_routing_predictions.json (refuses to overwrite).",
+ "F_threshold": 0.1,
+ "betaD_threshold": 1.0,
+ "written_at": "2026-11-22T11:28:44+06:00",
+ "study_rows_when_written": 0,
+ "instances": [
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "border-set",
+    0.055010386,
+    0.1491759907
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.1491759906507695,
+   "beta_D": 4.8891699069713965,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "within-set",
+    0.1067945113,
+    0.0708978831
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.07089788305118255,
+   "beta_D": 0.514650144956081,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "border-set",
+    0.0674054412,
+    0.0766523488
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.0766523488379651,
+   "beta_D": 3.4402865617358764,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "within-set",
+    0.0770772687,
+    0.0918447897
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.09184478965413372,
+   "beta_D": 2.745388522121801,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "border-set",
+    0.0732479297,
+    0.096377107
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.09637710697497702,
+   "beta_D": 7.790922798679662,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "within-set",
+    0.1099891514,
+    0.0940029724
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.09400297237741015,
+   "beta_D": 0.4979534771123935,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "border-set",
+    0.0672340758,
+    0.1394672323
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.1394672322701005,
+   "beta_D": 0.7077640881123708,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "within-set",
+    0.1416562136,
+    0.076674486
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.07667448603762128,
+   "beta_D": 6.935839180450523,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "border-set",
+    0.0586876705,
+    0.0689490746
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.06894907456018053,
+   "beta_D": 1.749564437746572,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "within-set",
+    0.0988187788,
+    0.1663404951
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.16634049509436175,
+   "beta_D": 7.294979620299005,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "border-set",
+    0.0794881438,
+    0.192160555
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.1921605550217187,
+   "beta_D": 6.697103187316213,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC200",
+    "FC200",
+    13,
+    "within-set",
+    0.0785688482,
+    0.1575049486
+   ],
+   "family": "E3c_nested_FC200",
+   "n": 13,
+   "F": 0.15750494862795889,
+   "beta_D": 9.332695732128853,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "border-set",
+    0.0407340207,
+    0.1643673713
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.16436737131373097,
+   "beta_D": 7.265058024008673,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "within-set",
+    0.0986394949,
+    0.082086461
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.08208646100990517,
+   "beta_D": 1.0453580086547463,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "border-set",
+    0.0281397127,
+    0.1657845949
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.16578459485631308,
+   "beta_D": 4.177383198673748,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "within-set",
+    0.0543959174,
+    0.1320356668
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.1320356668304687,
+   "beta_D": 6.431712987758479,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "border-set",
+    0.0395055954,
+    0.1974298992
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.19742989916122106,
+   "beta_D": 8.065529694544924,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "within-set",
+    0.0860705087,
+    0.1615187788
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.16151877881423696,
+   "beta_D": 4.676982510366422,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "border-set",
+    0.0596353701,
+    0.1527843473
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.15278434729367701,
+   "beta_D": 2.811026781764897,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "within-set",
+    0.1216525849,
+    0.0215959496
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.021595949628155687,
+   "beta_D": 5.407834521446848,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "border-set",
+    0.0525500054,
+    0.1152833088
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.11528330878033875,
+   "beta_D": 4.506442727336168,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "within-set",
+    0.0679295616,
+    0.2137022202
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.21370222020736793,
+   "beta_D": 4.365898265289249,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "border-set",
+    0.0274891648,
+    0.1807837882
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.1807837881787327,
+   "beta_D": 2.8181994374906365,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_FC400",
+    "FC400",
+    13,
+    "within-set",
+    0.0587520852,
+    0.140078614
+   ],
+   "family": "E3c_nested_FC400",
+   "n": 13,
+   "F": 0.14007861397837765,
+   "beta_D": 5.318699998604434,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "border-set",
+    3.1784538809,
+    0.1566131996
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.15661319955752953,
+   "beta_D": 1.3109168123086965,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "within-set",
+    2.7603481229,
+    0.2470209325
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.24702093251927226,
+   "beta_D": 6.6174909175212715,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "border-set",
+    2.9054625491,
+    0.1962362984
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.19623629837057002,
+   "beta_D": 7.559871479414433,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "within-set",
+    3.9291605373,
+    0.1584828393
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.15848283927565807,
+   "beta_D": 0.8437740412351112,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "border-set",
+    2.9129904757,
+    0.1932139611
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.1932139611265129,
+   "beta_D": 3.454676006959671,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "within-set",
+    3.18717672,
+    0.1766793104
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.17667931036334333,
+   "beta_D": 2.5152226193362774,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "border-set",
+    2.9663365545,
+    0.1492514943
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.14925149426027032,
+   "beta_D": 7.65879575776018,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "within-set",
+    3.37357603,
+    0.1838116271
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.18381162712629148,
+   "beta_D": 1.3728814197150514,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "border-set",
+    3.2356115704,
+    0.1448123432
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.14481234317825295,
+   "beta_D": 0.5536395373413687,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "within-set",
+    2.9324702884,
+    0.2274807828
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.2274807827732568,
+   "beta_D": 1.5138596802324462,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "border-set",
+    2.4091633899,
+    0.241253847
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.2412538469757186,
+   "beta_D": 4.574000846057783,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC200",
+    "SC200",
+    13,
+    "within-set",
+    3.0964326098,
+    0.18734155
+   ],
+   "family": "E3c_nested_SC200",
+   "n": 13,
+   "F": 0.18734154995458208,
+   "beta_D": 0.9699995231361795,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "border-set",
+    2.6746117119,
+    0.07132433
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.07132432998618124,
+   "beta_D": 0.0710114142687704,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "within-set",
+    2.6881995707,
+    0.0949448997
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.09494489974702629,
+   "beta_D": 0.108046108645969,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "border-set",
+    2.1548494743,
+    0.1200860373
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.12008603729960936,
+   "beta_D": 0.15174779485705397,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "within-set",
+    2.3936481712,
+    0.2116455178
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.21164551781609192,
+   "beta_D": 4.9889335652023625,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "border-set",
+    2.4768799325,
+    0.1179238792
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.11792387922075942,
+   "beta_D": 0.11917695251705214,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "within-set",
+    2.2569552291,
+    0.1631864208
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.16318642077199588,
+   "beta_D": 0.7870143982201386,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "border-set",
+    2.8647253679,
+    0.1585252372
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.15852523715119102,
+   "beta_D": 0.6395083561344879,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "within-set",
+    2.4226226195,
+    0.1776568152
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.17765681524096696,
+   "beta_D": 0.9548395598691684,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "border-set",
+    2.6397954415,
+    0.1852094044
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.18520940439734704,
+   "beta_D": 2.0549335389848036,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "within-set",
+    2.5737731467,
+    0.1543408454
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.1543408453995948,
+   "beta_D": 0.10017184941101732,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "border-set",
+    2.2694968273,
+    0.1640696279
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.16406962786981816,
+   "beta_D": 3.2181786693055567,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "E3c_nested_SC400",
+    "SC400",
+    13,
+    "within-set",
+    2.6129663838,
+    0.2352814114
+   ],
+   "family": "E3c_nested_SC400",
+   "n": 13,
+   "F": 0.23528141138416656,
+   "beta_D": 5.629966215807922,
+   "predicted_quantum_win": true
+  }
+ ],
+ "predicted_wins": 27
+}

@@ -1,0 +1,172 @@
+{
+ "note": "POST HOC (22 Nov 2026, after the Tier A results): what separates Tier A instances where the quantum proposal wins\nfrom those where it does not?\n\nMotivation: on SC the per-instance r is bimodal at n = 10-12 (r ~ 0 when the local chain is already fast, r ~ +2.5..+5\notherwise) and the frustration index F does not separate the two groups well at every n.\n\nCandidate mechanism: the critical depth D of the single-node-move energy landscape on partition space (the largest\nenergy barrier, over local minima, that must be crossed to reach a lower-energy partition; Metropolis-type chains\nwith single-node moves relax on a time scale ~ exp(beta * D) at low temperature). Computed exactly with union-find\nover the 2^(n-1) partitions (single-node flips; the top-bit flip maps through the global flip).\n\nNot a pre-registered test: reported as descriptive and as a hypothesis for a pre-registered follow-up. Cheap to\ncompute only because n <= 12 (exponential in n), so it is a mechanism, not a practical routing rule.\n",
+ "instances": 292,
+ "by_modality": {
+  "FC": {
+   "7": {
+    "spearman_r_vs_betaD": 0.03,
+    "spearman_r_vs_F": 0.93,
+    "spearman_log2local_vs_betaD": -0.96,
+    "auc_win_betaD": 0.59,
+    "auc_win_F": 0.95,
+    "median_betaD": 1.9
+   },
+   "8": {
+    "spearman_r_vs_betaD": 0.62,
+    "spearman_r_vs_F": 0.84,
+    "spearman_log2local_vs_betaD": -0.96,
+    "auc_win_betaD": 0.74,
+    "auc_win_F": 0.97,
+    "median_betaD": 2.72
+   },
+   "9": {
+    "spearman_r_vs_betaD": 0.36,
+    "spearman_r_vs_F": 0.77,
+    "spearman_log2local_vs_betaD": -0.98,
+    "auc_win_betaD": 0.68,
+    "auc_win_F": 0.95,
+    "median_betaD": 2.75
+   },
+   "10": {
+    "spearman_r_vs_betaD": 0.58,
+    "spearman_r_vs_F": 0.58,
+    "spearman_log2local_vs_betaD": -0.98,
+    "auc_win_betaD": 0.84,
+    "auc_win_F": 1.0,
+    "median_betaD": 3.07
+   },
+   "11": {
+    "spearman_r_vs_betaD": 0.81,
+    "spearman_r_vs_F": 0.44,
+    "spearman_log2local_vs_betaD": -0.99,
+    "auc_win_betaD": 0.91,
+    "auc_win_F": 1.0,
+    "median_betaD": 4.39
+   },
+   "12": {
+    "spearman_r_vs_betaD": 0.79,
+    "spearman_r_vs_F": 0.49,
+    "spearman_log2local_vs_betaD": -0.97,
+    "auc_win_betaD": 0.78,
+    "auc_win_F": 0.97,
+    "median_betaD": 4.39
+   },
+   "pooled_7to12": {
+    "auc_win_betaD": 0.744,
+    "auc_win_F": 0.95,
+    "spearman_r_vs_betaD": 0.627,
+    "spearman_r_vs_F": 0.708
+   },
+   "win_share_by_betaD_bin_n10to12": {
+    "[0,1)": {
+     "n": 12,
+     "win_share": 0.58,
+     "mean_r": -0.35
+    },
+    "[1,2)": {
+     "n": 7,
+     "win_share": 1.0,
+     "mean_r": 1.92
+    },
+    "[2,3)": {
+     "n": 12,
+     "win_share": 0.92,
+     "mean_r": 2.4
+    },
+    "[3,5)": {
+     "n": 13,
+     "win_share": 1.0,
+     "mean_r": 4.14
+    },
+    "[5,inf)": {
+     "n": 28,
+     "win_share": 0.96,
+     "mean_r": 4.46
+    }
+   }
+  },
+  "SC": {
+   "7": {
+    "spearman_r_vs_betaD": 0.06,
+    "spearman_r_vs_F": 0.67,
+    "spearman_log2local_vs_betaD": -0.86,
+    "auc_win_betaD": 0.52,
+    "auc_win_F": 0.77,
+    "median_betaD": 0.46
+   },
+   "8": {
+    "spearman_r_vs_betaD": 0.59,
+    "spearman_r_vs_F": 0.76,
+    "spearman_log2local_vs_betaD": -0.69,
+    "auc_win_betaD": 0.76,
+    "auc_win_F": 0.83,
+    "median_betaD": 0.48
+   },
+   "9": {
+    "spearman_r_vs_betaD": 0.65,
+    "spearman_r_vs_F": 0.66,
+    "spearman_log2local_vs_betaD": -0.78,
+    "auc_win_betaD": 0.75,
+    "auc_win_F": 0.83,
+    "median_betaD": 0.96
+   },
+   "10": {
+    "spearman_r_vs_betaD": 0.8,
+    "spearman_r_vs_F": 0.76,
+    "spearman_log2local_vs_betaD": -0.88,
+    "auc_win_betaD": 0.84,
+    "auc_win_F": 0.94,
+    "median_betaD": 0.56
+   },
+   "11": {
+    "spearman_r_vs_betaD": 0.79,
+    "spearman_r_vs_F": 0.01,
+    "spearman_log2local_vs_betaD": -0.88,
+    "auc_win_betaD": 0.87,
+    "auc_win_F": 0.68,
+    "median_betaD": 1.77
+   },
+   "12": {
+    "spearman_r_vs_betaD": 0.82,
+    "spearman_r_vs_F": 0.61,
+    "spearman_log2local_vs_betaD": -0.8,
+    "auc_win_betaD": 0.98,
+    "auc_win_F": 0.83,
+    "median_betaD": 0.91
+   },
+   "pooled_7to12": {
+    "auc_win_betaD": 0.792,
+    "auc_win_F": 0.813,
+    "spearman_r_vs_betaD": 0.681,
+    "spearman_r_vs_F": 0.619
+   },
+   "win_share_by_betaD_bin_n10to12": {
+    "[0,1)": {
+     "n": 42,
+     "win_share": 0.43,
+     "mean_r": -0.02
+    },
+    "[1,2)": {
+     "n": 3,
+     "win_share": 0.67,
+     "mean_r": 1.72
+    },
+    "[2,3)": {
+     "n": 7,
+     "win_share": 1.0,
+     "mean_r": 3.05
+    },
+    "[3,5)": {
+     "n": 17,
+     "win_share": 1.0,
+     "mean_r": 3.78
+    },
+    "[5,inf)": {
+     "n": 3,
+     "win_share": 1.0,
+     "mean_r": 4.34
+    }
+   }
+  }
+ }
+}

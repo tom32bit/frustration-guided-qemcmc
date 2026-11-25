@@ -1,0 +1,6 @@
+{
+ "name": "ibm_kingston",
+ "median_2q_error_at_choice": 0.0020034210881711145,
+ "two_qubit_gate": "cz",
+ "chosen_at": "2026-11-22 10:45:56 +0600"
+}

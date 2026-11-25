@@ -1,0 +1,8 @@
+{
+ "band": [
+  0.02,
+  0.03
+ ],
+ "n_extra_random_starts": 64,
+ "networks": []
+}

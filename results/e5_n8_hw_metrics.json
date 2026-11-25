@@ -1,0 +1,373 @@
+{
+ "tag": "hw",
+ "instances": [
+  {
+   "rank": 1,
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    8,
+    "within-set",
+    0.089363996,
+    0.1314762767
+   ],
+   "backend": "ibm_kingston",
+   "transpile": {
+    "seed_transpiler": 8,
+    "seed_trials_2q": [
+     212,
+     208,
+     219,
+     214,
+     209,
+     219,
+     205,
+     203,
+     198,
+     214
+    ],
+    "layout": [
+     22,
+     23,
+     21,
+     16,
+     3,
+     4,
+     2,
+     1
+    ],
+    "two_qubit_count_min_max": [
+     203,
+     203
+    ],
+    "depth_max": 363,
+    "active_qubits_max": 8,
+    "backend": "ibm_kingston",
+    "two_qubit_gate": "cz"
+   },
+   "usage_quantum_seconds": 83,
+   "job_id": "dc17cninj2vs73df08cg",
+   "shots_per_row": 2000,
+   "gap_ideal": 0.07883720036955155,
+   "gap_ideal_selection_file": 0.07883720036954256,
+   "ideal_stationary_TV_check": 2.4135747975365825e-15,
+   "gap_oracle": 0.012637123324062638,
+   "oracle_chain": "uniform",
+   "gap_quench_ideal": 0.07378357782528855,
+   "gaps_classical": {
+    "local": 0.002053976072337149,
+    "label_swap": 0.001026988036168075,
+    "uniform": 0.012637123324062638,
+    "sw": 0.002257440328624516,
+    "wolff": 0.004471363713798193,
+    "heat_bath_per_cost": 0.0078125
+   },
+   "gap_hw": 0.06204436694173521,
+   "retention": 0.7869935341552025,
+   "advantage": 4.909690706554639,
+   "advantage_ideal": 6.238540081304407,
+   "stationary_TV_to_gibbs": 0.02484416898664059,
+   "coassign_max_err": 0.021085285387471564,
+   "coassign_mean_err": 0.007115684062237078,
+   "hastings_gap": 0.06127953405440634,
+   "hastings_retention": 0.7772921129512061,
+   "hastings_advantage": 4.849168001527892,
+   "hastings_stationary_TV_check": 1.3790791332884989e-14,
+   "row_TV_mean": 0.1976389752771528,
+   "transpose_asym_rel": 0.2889300673090312,
+   "gibbs": {
+    "p_max": 0.6182182289164164,
+    "n_eff": 2.042406023811839
+   },
+   "finite_shot_null": {
+    "retention": [
+     0.9337299208685191,
+     0.9965638250732723,
+     1.0778458339140404
+    ],
+    "coassign_max_err": [
+     0.001960043368316668,
+     0.012350666233188978,
+     0.029259956247737667
+    ],
+    "row_TV": [
+     0.08704536614516831,
+     0.08813392595014594,
+     0.08923687163043917
+    ],
+    "transpose_asym": [
+     0.2030730432530569,
+     0.20784101184181464,
+     0.21189730413799848
+    ]
+   },
+   "bootstrap_95": {
+    "retention": [
+     0.6849623211323876,
+     0.7933873675596792,
+     0.8831977773415663
+    ],
+    "advantage": [
+     4.2731648945677,
+     4.949578892521651,
+     5.509864733664327
+    ],
+    "coassign_max_err": [
+     0.006696064789241406,
+     0.023651101068428715,
+     0.0584121208279743
+    ]
+   },
+   "H1_retention": true,
+   "H2_advantage": true,
+   "H3_bias": true,
+   "all_criteria": true
+  },
+  {
+   "rank": 2,
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    8,
+    "within-set",
+    0.0856249985,
+    0.1812301266
+   ],
+   "backend": "ibm_kingston",
+   "transpile": {
+    "seed_transpiler": 8,
+    "seed_trials_2q": [
+     212,
+     208,
+     219,
+     214,
+     209,
+     219,
+     205,
+     203,
+     198,
+     214
+    ],
+    "layout": [
+     22,
+     23,
+     21,
+     16,
+     3,
+     4,
+     2,
+     1
+    ],
+    "two_qubit_count_min_max": [
+     203,
+     203
+    ],
+    "depth_max": 361,
+    "active_qubits_max": 8,
+    "backend": "ibm_kingston",
+    "two_qubit_gate": "cz"
+   },
+   "usage_quantum_seconds": 83,
+   "job_id": "dc17ghlhdvas73bkg300",
+   "shots_per_row": 2000,
+   "gap_ideal": 0.05752889205249112,
+   "gap_ideal_selection_file": 0.0575288920524899,
+   "ideal_stationary_TV_check": 1.7452191821000216e-15,
+   "gap_oracle": 0.016166935534761784,
+   "oracle_chain": "uniform",
+   "gap_quench_ideal": 0.10071718868340329,
+   "gaps_classical": {
+    "local": 0.0003165694300177879,
+    "label_swap": 0.0001582847150095601,
+    "uniform": 0.016166935534761784,
+    "sw": 0.0012397281986598063,
+    "wolff": 0.0024475404419576074,
+    "heat_bath_per_cost": 0.0078125
+   },
+   "gap_hw": 0.04524568823203101,
+   "retention": 0.7864863482986507,
+   "advantage": 2.798655820377631,
+   "advantage_ideal": 3.558428987905208,
+   "stationary_TV_to_gibbs": 0.020747990297986036,
+   "coassign_max_err": 0.019114773439212862,
+   "coassign_mean_err": 0.010283880713886476,
+   "hastings_gap": 0.04444029876846067,
+   "hastings_retention": 0.7724866094746269,
+   "hastings_advantage": 2.7488387439231223,
+   "hastings_stationary_TV_check": 1.0724423763576534e-15,
+   "row_TV_mean": 0.19285012757986988,
+   "transpose_asym_rel": 0.27923026110727156,
+   "gibbs": {
+    "p_max": 0.4832393859183454,
+    "n_eff": 3.223061340571106
+   },
+   "finite_shot_null": {
+    "retention": [
+     0.906798842482412,
+     1.0077181663881531,
+     1.0992119709638555
+    ],
+    "coassign_max_err": [
+     0.0037235207561692493,
+     0.018569156798007053,
+     0.0491334346814334
+    ],
+    "row_TV": [
+     0.08528830723044845,
+     0.0862083065652655,
+     0.08717324573356608
+    ],
+    "transpose_asym": [
+     0.20159910880224544,
+     0.20620416899598576,
+     0.21093155606665456
+    ]
+   },
+   "bootstrap_95": {
+    "retention": [
+     0.701863772200011,
+     0.7834629259615349,
+     0.8758146680385065
+    ],
+    "advantage": [
+     2.4975323925570168,
+     2.787897186690558,
+     3.116524302780799
+    ],
+    "coassign_max_err": [
+     0.0068665702218734335,
+     0.026131024358904298,
+     0.07274656200706033
+    ]
+   },
+   "H1_retention": true,
+   "H2_advantage": true,
+   "H3_bias": true,
+   "all_criteria": true
+  },
+  {
+   "rank": 3,
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    8,
+    "within-set",
+    0.0685417006,
+    0.1857604224
+   ],
+   "backend": "ibm_kingston",
+   "transpile": {
+    "seed_transpiler": 8,
+    "seed_trials_2q": [
+     212,
+     208,
+     219,
+     214,
+     209,
+     219,
+     205,
+     203,
+     198,
+     214
+    ],
+    "layout": [
+     22,
+     23,
+     21,
+     16,
+     3,
+     4,
+     2,
+     1
+    ],
+    "two_qubit_count_min_max": [
+     203,
+     203
+    ],
+    "depth_max": 361,
+    "active_qubits_max": 8,
+    "backend": "ibm_kingston",
+    "two_qubit_gate": "cz"
+   },
+   "usage_quantum_seconds": 83,
+   "job_id": "dc17k4ds2omc738a93j0",
+   "shots_per_row": 2000,
+   "gap_ideal": 0.08703328091234908,
+   "gap_ideal_selection_file": 0.08703328091235252,
+   "ideal_stationary_TV_check": 1.950552737659827e-15,
+   "gap_oracle": 0.020500541961897323,
+   "oracle_chain": "local",
+   "gap_quench_ideal": 0.08398829112914052,
+   "gaps_classical": {
+    "local": 0.020500541961897323,
+    "label_swap": 0.010250270980948661,
+    "uniform": 0.0191882344286195,
+    "sw": 0.001374913700387892,
+    "wolff": 0.002723931316155115,
+    "heat_bath_per_cost": 0.0078125
+   },
+   "gap_hw": 0.10436846461675131,
+   "retention": 1.1991787914080871,
+   "advantage": 5.091010023575593,
+   "advantage_ideal": 4.245413661458839,
+   "stationary_TV_to_gibbs": 0.01761189146076103,
+   "coassign_max_err": 0.017320802620271025,
+   "coassign_mean_err": 0.008044745834789235,
+   "hastings_gap": 0.10320894386338231,
+   "hastings_retention": 1.1858560631228379,
+   "hastings_advantage": 5.034449530905491,
+   "hastings_stationary_TV_check": 2.75043588013738e-15,
+   "row_TV_mean": 0.19338815891882885,
+   "transpose_asym_rel": 0.280116604543724,
+   "gibbs": {
+    "p_max": 0.4071505395174736,
+    "n_eff": 3.6778145373387052
+   },
+   "finite_shot_null": {
+    "retention": [
+     0.9613200292363496,
+     0.9950324199087057,
+     1.0291267763596053
+    ],
+    "coassign_max_err": [
+     0.0035284802822101793,
+     0.012599492950635394,
+     0.0288011524392566
+    ],
+    "row_TV": [
+     0.08666337149126169,
+     0.08763827570724456,
+     0.08848417784183943
+    ],
+    "transpose_asym": [
+     0.20231035216403778,
+     0.20678892681857897,
+     0.2109675334927921
+    ]
+   },
+   "bootstrap_95": {
+    "retention": [
+     1.1637518243527336,
+     1.1978814534604387,
+     1.2292869796899235
+    ],
+    "advantage": [
+     4.940607893654742,
+     5.085502287329116,
+     5.218831737429074
+    ],
+    "coassign_max_err": [
+     0.009779551429614768,
+     0.025418413770341486,
+     0.04588852714336668
+    ]
+   },
+   "H1_retention": true,
+   "H2_advantage": true,
+   "H3_bias": true,
+   "all_criteria": true
+  }
+ ],
+ "instances_meeting_all_criteria": 3,
+ "E5_success": true
+}

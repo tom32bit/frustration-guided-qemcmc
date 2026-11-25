@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qsr2"
+version = "2.0.0"
+description = "Frustration-guided quantum-enhanced sampling of community uncertainty in brain networks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Abdullah Al Shafin"},          # ORCID 0009-0007-6634-6900
+  {name = "S. M. Yousuf Iqbal Tomal"},    # ORCID 0009-0000-3391-3824
+]
+dependencies = ["numpy", "scipy", "matplotlib", "networkx", "igraph", "leidenalg", "numba"]
+
+[project.optional-dependencies]
+hardware = ["qiskit", "qiskit-ibm-runtime", "qiskit-aer", "pennylane", "pennylane-lightning"]
+test = ["pytest", "scikit-learn", "pandas"]
+
+[tool.setuptools]
+packages = ["qsr2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

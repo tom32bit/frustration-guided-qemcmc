@@ -1,0 +1,797 @@
+{
+ "rule": "E4: SEALED routing decisions for every tiling ROI, computed from instance data only (couplings, sigma, F) BEFORE\nany E4 exact row exists. Same two-factor rule and thresholds as E3 amendment 13 and E3c:\n  routed to the quantum proposal  <=>  F >= 0.10  and  beta * D >= 1\nwith D the critical depth of the single-node-move landscape on partition space. Primary decisions use\nbeta = 1 / sigma_ROI (beta_tilde = 1); the beta_tilde = 2 secondary uses beta = 2 / sigma_ROI.\nWrites results/e4_routing_predictions.json (refuses to overwrite).",
+ "F_threshold": 0.1,
+ "betaD_threshold": 1.0,
+ "written_at": "2026-11-22T21:48:52+06:00",
+ "e4_exact_rows_when_written": 0,
+ "instances": [
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    3,
+    "LH_Limbic",
+    0.0292663067,
+    0.0
+   ],
+   "ds": "FC100",
+   "roi": "LH_Limbic",
+   "n": 3,
+   "F": 0.0,
+   "D": 0.0,
+   "beta_D_b1.0": 0.0,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.0,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    4,
+    "LH_Cont",
+    0.20778631,
+    0.068945417
+   ],
+   "ds": "FC100",
+   "roi": "LH_Cont",
+   "n": 4,
+   "F": 0.06894541700250224,
+   "D": 0.4202635565450236,
+   "beta_D_b1.0": 2.0225757732797507,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 4.045151546559501,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    5,
+    "RH_SalVentAttn",
+    0.0524731781,
+    0.0
+   ],
+   "ds": "FC100",
+   "roi": "RH_SalVentAttn",
+   "n": 5,
+   "F": 0.0,
+   "D": 0.0,
+   "beta_D_b1.0": 0.0,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.0,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    6,
+    "LH_SomMot",
+    0.0577099199,
+    0.0
+   ],
+   "ds": "FC100",
+   "roi": "LH_SomMot",
+   "n": 6,
+   "F": 0.0,
+   "D": 0.0,
+   "beta_D_b1.0": 0.0,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.0,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    7,
+    "LH_SalVentAttn",
+    0.0430096275,
+    0.0024389236
+   ],
+   "ds": "FC100",
+   "roi": "LH_SalVentAttn",
+   "n": 7,
+   "F": 0.0024389235774969764,
+   "D": 0.0,
+   "beta_D_b1.0": 0.0,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.0,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    7,
+    "RH_DorsAttn",
+    0.083412593,
+    0.0484573709
+   ],
+   "ds": "FC100",
+   "roi": "RH_DorsAttn",
+   "n": 7,
+   "F": 0.048457370850317,
+   "D": 0.05317835839468066,
+   "beta_D_b1.0": 0.6375339317192643,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.2750678634385286,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    8,
+    "LH_DorsAttn",
+    0.094752537,
+    0.0943577425
+   ],
+   "ds": "FC100",
+   "roi": "LH_DorsAttn",
+   "n": 8,
+   "F": 0.09435774251093,
+   "D": 0.23232055198235146,
+   "beta_D_b1.0": 2.451866295291664,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 4.903732590583328,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    8,
+    "RH_SomMot",
+    0.065514113,
+    0.0300772241
+   ],
+   "ds": "FC100",
+   "roi": "RH_SomMot",
+   "n": 8,
+   "F": 0.030077224056594333,
+   "D": 0.22715602514485544,
+   "beta_D_b1.0": 3.4672838383242373,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 6.9345676766484745,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    8,
+    "RH_Vis",
+    0.1173271291,
+    0.1241211991
+   ],
+   "ds": "FC100",
+   "roi": "RH_Vis",
+   "n": 8,
+   "F": 0.12412119910032095,
+   "D": 0.26268305969049943,
+   "beta_D_b1.0": 2.238894463499558,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 4.477788926999116,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    9,
+    "LH_Vis",
+    0.1065715259,
+    0.1376364533
+   ],
+   "ds": "FC100",
+   "roi": "LH_Vis",
+   "n": 9,
+   "F": 0.13763645329018073,
+   "D": 0.22841124946782854,
+   "beta_D_b1.0": 2.1432671395435663,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 4.286534279087133,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    9,
+    "RH_Cont",
+    0.1143864208,
+    0.1906730337
+   ],
+   "ds": "FC100",
+   "roi": "RH_Cont",
+   "n": 9,
+   "F": 0.1906730336511293,
+   "D": 0.7120628769277542,
+   "beta_D_b1.0": 6.225064759870376,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 12.450129519740752,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    11,
+    "RH_Default",
+    0.1203009156,
+    0.1066353713
+   ],
+   "ds": "FC100",
+   "roi": "RH_Default",
+   "n": 11,
+   "F": 0.10663537125380496,
+   "D": 0.45909000203850314,
+   "beta_D_b1.0": 3.8161804487180446,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 7.632360897436089,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC100",
+    13,
+    "LH_Default",
+    0.1156988636,
+    0.1423880151
+   ],
+   "ds": "FC100",
+   "roi": "LH_Default",
+   "n": 13,
+   "F": 0.1423880151287402,
+   "D": 0.36635388953365133,
+   "beta_D_b1.0": 3.166443282229801,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 6.332886564459602,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    3,
+    "LH_Limbic",
+    2.9339919563,
+    0.1938353777
+   ],
+   "ds": "SC100",
+   "roi": "LH_Limbic",
+   "n": 3,
+   "F": 0.19383537770963416,
+   "D": 0.0,
+   "beta_D_b1.0": 0.0,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.0,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    4,
+    "LH_Cont",
+    1.1921410083,
+    0.0
+   ],
+   "ds": "SC100",
+   "roi": "LH_Cont",
+   "n": 4,
+   "F": 0.0,
+   "D": 0.0,
+   "beta_D_b1.0": 0.0,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.0,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    5,
+    "RH_SalVentAttn",
+    3.7371555508,
+    0.0856443437
+   ],
+   "ds": "SC100",
+   "roi": "RH_SalVentAttn",
+   "n": 5,
+   "F": 0.08564434368649469,
+   "D": 2.1587205730618706,
+   "beta_D_b1.0": 0.5776373350530647,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.1552746701061294,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    6,
+    "LH_SomMot",
+    3.4505955625,
+    0.1428210336
+   ],
+   "ds": "SC100",
+   "roi": "LH_SomMot",
+   "n": 6,
+   "F": 0.1428210336381368,
+   "D": 1.2411367654504382,
+   "beta_D_b1.0": 0.3596876953462588,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.7193753906925175,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    7,
+    "LH_SalVentAttn",
+    3.0814231191,
+    0.1491950987
+   ],
+   "ds": "SC100",
+   "roi": "LH_SalVentAttn",
+   "n": 7,
+   "F": 0.1491950987086383,
+   "D": 1.183878576857225,
+   "beta_D_b1.0": 0.3841986417008549,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.7683972834017098,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    7,
+    "RH_DorsAttn",
+    3.5663042349,
+    0.2514369181
+   ],
+   "ds": "SC100",
+   "roi": "RH_DorsAttn",
+   "n": 7,
+   "F": 0.2514369180944212,
+   "D": 2.3201162731130207,
+   "beta_D_b1.0": 0.6505659978222346,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.3011319956444691,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    8,
+    "LH_DorsAttn",
+    3.5593549513,
+    0.1740751962
+   ],
+   "ds": "SC100",
+   "roi": "LH_DorsAttn",
+   "n": 8,
+   "F": 0.17407519615633105,
+   "D": 3.8943362382016566,
+   "beta_D_b1.0": 1.0941129197633959,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 2.1882258395267917,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    8,
+    "RH_SomMot",
+    3.4369557969,
+    0.1382417592
+   ],
+   "ds": "SC100",
+   "roi": "RH_SomMot",
+   "n": 8,
+   "F": 0.1382417591692997,
+   "D": 1.8452642010203384,
+   "beta_D_b1.0": 0.536889128065732,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.073778256131464,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    8,
+    "RH_Vis",
+    3.064921509,
+    0.2069370702
+   ],
+   "ds": "SC100",
+   "roi": "RH_Vis",
+   "n": 8,
+   "F": 0.20693707021181396,
+   "D": 5.816983656752669,
+   "beta_D_b1.0": 1.8979225535511968,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 3.7958451071023935,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    9,
+    "LH_Vis",
+    2.9270808151,
+    0.2540315681
+   ],
+   "ds": "SC100",
+   "roi": "LH_Vis",
+   "n": 9,
+   "F": 0.2540315680919501,
+   "D": 4.780205316641727,
+   "beta_D_b1.0": 1.6330964597666946,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 3.266192919533389,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    9,
+    "RH_Cont",
+    3.58666636,
+    0.1092247029
+   ],
+   "ds": "SC100",
+   "roi": "RH_Cont",
+   "n": 9,
+   "F": 0.1092247029275121,
+   "D": 2.7968501992558146,
+   "beta_D_b1.0": 0.7797910144288652,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.5595820288577305,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    11,
+    "RH_Default",
+    3.6397090136,
+    0.131889568
+   ],
+   "ds": "SC100",
+   "roi": "RH_Default",
+   "n": 11,
+   "F": 0.13188956800620424,
+   "D": 1.4624633053118146,
+   "beta_D_b1.0": 0.40180775437105926,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.8036155087421185,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC100",
+    13,
+    "LH_Default",
+    3.8920976541,
+    0.1614712115
+   ],
+   "ds": "SC100",
+   "roi": "LH_Default",
+   "n": 13,
+   "F": 0.16147121146675206,
+   "D": 2.0733722901392113,
+   "beta_D_b1.0": 0.5327133269571642,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.0654266539143284,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    6,
+    "LH_Limbic",
+    0.0296511358,
+    0.0175319818
+   ],
+   "ds": "FC200",
+   "roi": "LH_Limbic",
+   "n": 6,
+   "F": 0.017531981824846745,
+   "D": 0.09703248943621312,
+   "beta_D_b1.0": 3.272471248396026,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 6.544942496792052,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    6,
+    "RH_Limbic",
+    0.0315413273,
+    0.140619902
+   ],
+   "ds": "FC200",
+   "roi": "RH_Limbic",
+   "n": 6,
+   "F": 0.1406199020303946,
+   "D": 0.08896834248195612,
+   "beta_D_b1.0": 2.820691141435787,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 5.641382282871574,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    11,
+    "LH_SalVentAttn",
+    0.0542443763,
+    0.1215012023
+   ],
+   "ds": "FC200",
+   "roi": "LH_SalVentAttn",
+   "n": 11,
+   "F": 0.12150120230853581,
+   "D": 0.37206073677828755,
+   "beta_D_b1.0": 6.858973454660333,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 13.717946909320666,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    11,
+    "RH_SalVentAttn",
+    0.0697904016,
+    0.1238079944
+   ],
+   "ds": "FC200",
+   "roi": "RH_SalVentAttn",
+   "n": 11,
+   "F": 0.12380799444027796,
+   "D": 0.557411018859558,
+   "beta_D_b1.0": 7.986929521520929,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 15.973859043041857,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    13,
+    "LH_Cont",
+    0.0938545027,
+    0.1442142097
+   ],
+   "ds": "FC200",
+   "roi": "LH_Cont",
+   "n": 13,
+   "F": 0.14421420970552476,
+   "D": 0.27331769700527353,
+   "beta_D_b1.0": 2.91214261671497,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 5.82428523342994,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    13,
+    "LH_DorsAttn",
+    0.0843883673,
+    0.2282713315
+   ],
+   "ds": "FC200",
+   "roi": "LH_DorsAttn",
+   "n": 13,
+   "F": 0.22827133147369183,
+   "D": 0.8074953418224067,
+   "beta_D_b1.0": 9.56879920889253,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 19.13759841778506,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "FC200",
+    13,
+    "RH_DorsAttn",
+    0.0989361287,
+    0.1953221988
+   ],
+   "ds": "FC200",
+   "roi": "RH_DorsAttn",
+   "n": 13,
+   "F": 0.19532219877833873,
+   "D": 0.5559993250731683,
+   "beta_D_b1.0": 5.619780480925622,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 11.239560961851245,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    6,
+    "LH_Limbic",
+    3.6143638569,
+    0.0890763826
+   ],
+   "ds": "SC200",
+   "roi": "LH_Limbic",
+   "n": 6,
+   "F": 0.08907638262972938,
+   "D": 3.504887268295895,
+   "beta_D_b1.0": 0.9697106896365187,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.9394213792730375,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    6,
+    "RH_Limbic",
+    4.0732925621,
+    0.0236734954
+   ],
+   "ds": "SC200",
+   "roi": "RH_Limbic",
+   "n": 6,
+   "F": 0.023673495395531822,
+   "D": 3.8625714875954547,
+   "beta_D_b1.0": 0.9482676308392328,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 1.8965352616784656,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    11,
+    "LH_SalVentAttn",
+    2.9969455157,
+    0.1924340117
+   ],
+   "ds": "SC200",
+   "roi": "LH_SalVentAttn",
+   "n": 11,
+   "F": 0.19243401171074545,
+   "D": 0.6416836498141265,
+   "beta_D_b1.0": 0.21411255107887409,
+   "routed_b1.0": false,
+   "beta_D_b2.0": 0.42822510215774817,
+   "routed_b2.0": false
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    11,
+    "RH_SalVentAttn",
+    3.0452473331,
+    0.2259726757
+   ],
+   "ds": "SC200",
+   "roi": "RH_SalVentAttn",
+   "n": 11,
+   "F": 0.2259726757384122,
+   "D": 6.700168782684507,
+   "beta_D_b1.0": 2.2002051228945216,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 4.400410245789043,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    13,
+    "LH_Cont",
+    2.9100307954,
+    0.1591171781
+   ],
+   "ds": "SC200",
+   "roi": "LH_Cont",
+   "n": 13,
+   "F": 0.15911717812049725,
+   "D": 7.348926632530507,
+   "beta_D_b1.0": 2.525377616016049,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 5.050755232032098,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    13,
+    "LH_DorsAttn",
+    3.1323924744,
+    0.1724500693
+   ],
+   "ds": "SC200",
+   "roi": "LH_DorsAttn",
+   "n": 13,
+   "F": 0.17245006925250744,
+   "D": 17.036453331792472,
+   "beta_D_b1.0": 5.438799087626333,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 10.877598175252666,
+   "routed_b2.0": true
+  },
+  {
+   "key": [
+    "E4_tiling",
+    "SC200",
+    13,
+    "RH_DorsAttn",
+    2.9547792001,
+    0.1838845812
+   ],
+   "ds": "SC200",
+   "roi": "RH_DorsAttn",
+   "n": 13,
+   "F": 0.1838845811636124,
+   "D": 22.647288850953657,
+   "beta_D_b1.0": 7.664629847772992,
+   "routed_b1.0": true,
+   "beta_D_b2.0": 15.329259695545984,
+   "routed_b2.0": true
+  }
+ ],
+ "routed_b1.0": {
+  "FC100": [
+   "RH_Vis",
+   "LH_Vis",
+   "RH_Cont",
+   "RH_Default",
+   "LH_Default"
+  ],
+  "FC200": [
+   "RH_Limbic",
+   "LH_SalVentAttn",
+   "RH_SalVentAttn",
+   "LH_Cont",
+   "LH_DorsAttn",
+   "RH_DorsAttn"
+  ],
+  "SC100": [
+   "LH_DorsAttn",
+   "RH_Vis",
+   "LH_Vis"
+  ],
+  "SC200": [
+   "RH_SalVentAttn",
+   "LH_Cont",
+   "LH_DorsAttn",
+   "RH_DorsAttn"
+  ]
+ }
+}

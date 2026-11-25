@@ -1,0 +1,27 @@
+970 instances
+1/970 done
+51/970 done
+101/970 done
+151/970 done
+201/970 done
+251/970 done
+301/970 done
+351/970 done
+401/970 done
+451/970 done
+501/970 done
+551/970 done
+601/970 done
+651/970 done
+701/970 done
+751/970 done
+801/970 done
+851/970 done
+901/970 done
+951/970 done
+Counter({'P3_roi_FC100': 168, 'P3_roi_FC200': 168, 'P3_roi_SC100': 168, 'P3_roi_SC200': 168, 'P2_split_FC400': 62, 'P1_border_FC100': 56, 'P1_border_SC100': 56, 'P2_split_SC100': 31, 'P2_split_FC200': 30, 'P3_canonical': 24, 'P2_split_SC200': 22, 'P2_split_FC100': 17})
+
+real	51m11.654s
+user	331m8.251s
+sys	5m57.918s
+exit 0

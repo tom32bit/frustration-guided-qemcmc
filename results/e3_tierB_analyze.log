@@ -1,0 +1,150 @@
+{
+ "protocol": "docs/E3_scaling_protocol_2026-11-21.md (amendment 10)",
+ "rule": "E3 Tier B endpoints (docs/E3_scaling_protocol_2026-11-21.md, amendment 10), written before any Tier B data.\n\nPer instance: rho(T) = 2 log2(RMSE_oracle(T) / RMSE_quantum(T)), RMSE over pairs of the pooled co-assignment estimate,\noracle = min RMSE over {local, label_swap, uniform, sw, wolff, heat_bath (i.i.d., cost 2^(n-1) per sample)} at the\nsame number of steps T (per-step accounting).\nEndpoint B per modality (FC = FC200+FC400, SC = SC200+SC400): PASS iff\n  (i)  slope of mean rho over n in {12, 14, 16} > 0, 95% bootstrap CI (1000 resamples of instances within n) > 0\n  (ii) mean rho at n = 14 > 0, 95% bootstrap CI > 0.\nDescriptive: mean rho at n = 16; rho at n*T for the classical chains (sweep-cost sensitivity); at n = 12 the Spearman\ncorrelation and mean difference between simulated rho and the exact log2 asymptotic-variance ratio (Tier A rows).\nAmendment 13 (22 Nov 2026, added before any Tier B data at n = 14-16): prospective two-factor routing test against the\nsealed predictions in results/e3_tierB_routing_predictions.json (share rho > 0, predicted wins vs rest, one-sided Fisher).\n",
+ "instances": 40,
+ "modalities": {
+  "FC": {
+   "instances": 20,
+   "PRIMARY_endpoint_B": {
+    "slope": 0.267,
+    "slope_ci95": [
+     -0.668,
+     1.163
+    ],
+    "mean_rho_at_n14": 2.517,
+    "mean_rho_at_n14_ci95": [
+     -0.479,
+     5.335
+    ],
+    "mean_rho_by_n": {
+     "12": 1.373,
+     "14": 2.517,
+     "16": 2.44
+    },
+    "instances_by_n": {
+     "12": 8,
+     "14": 8,
+     "16": 4
+    },
+    "passes": false
+   },
+   "sensitivity_classical_nT_steps": {
+    "slope": -0.283,
+    "slope_ci95": [
+     -1.403,
+     0.779
+    ],
+    "mean_rho_at_n14": -2.633,
+    "mean_rho_at_n14_ci95": [
+     -6.232,
+     -0.115
+    ],
+    "mean_rho_by_n": {
+     "12": -3.245,
+     "14": -2.633,
+     "16": -4.379
+    },
+    "instances_by_n": {
+     "12": 8,
+     "14": 8,
+     "16": 4
+    },
+    "passes": false
+   },
+   "mean_rho_n16": 2.44,
+   "best_classical_counts": {
+    "heat_bath": 1,
+    "label_swap": 1,
+    "local": 11,
+    "sw": 1,
+    "uniform": 1,
+    "wolff": 5
+   }
+  },
+  "SC": {
+   "instances": 20,
+   "PRIMARY_endpoint_B": {
+    "slope": -0.343,
+    "slope_ci95": [
+     -1.139,
+     0.348
+    ],
+    "mean_rho_at_n14": 2.209,
+    "mean_rho_at_n14_ci95": [
+     0.416,
+     4.003
+    ],
+    "mean_rho_by_n": {
+     "12": 1.728,
+     "14": 2.209,
+     "16": 0.355
+    },
+    "instances_by_n": {
+     "12": 8,
+     "14": 8,
+     "16": 4
+    },
+    "passes": false
+   },
+   "sensitivity_classical_nT_steps": {
+    "slope": -0.276,
+    "slope_ci95": [
+     -1.226,
+     0.563
+    ],
+    "mean_rho_at_n14": -2.925,
+    "mean_rho_at_n14_ci95": [
+     -5.614,
+     -0.197
+    ],
+    "mean_rho_by_n": {
+     "12": -4.481,
+     "14": -2.925,
+     "16": -5.586
+    },
+    "instances_by_n": {
+     "12": 8,
+     "14": 8,
+     "16": 4
+    },
+    "passes": false
+   },
+   "mean_rho_n16": 0.355,
+   "best_classical_counts": {
+    "heat_bath": 2,
+    "label_swap": 1,
+    "local": 14,
+    "sw": 1,
+    "uniform": 2,
+    "wolff": 0
+   }
+  }
+ },
+ "validation_n12_simulated_vs_exact": {
+  "pairs": 16,
+  "spearman": 0.774,
+  "mean_simulated_rho": 1.55,
+  "mean_exact_log2_s2_ratio": 2.238
+ },
+ "amendment13_routing_test": {
+  "predictions_written_at": "2026-11-22T02:00:47+06:00",
+  "rows_existing_when_written": 0,
+  "instances": 24,
+  "predicted_win_class": {
+   "wins": 13,
+   "losses": 2,
+   "mean_rho": 3.599
+  },
+  "rest": {
+   "wins": 4,
+   "losses": 5,
+   "mean_rho": -0.556
+  },
+  "fisher_one_sided_p": 0.04197004368629082,
+  "accuracy": 0.75
+ },
+ "E3_endpoint_B": {
+  "FC": false,
+  "SC": false
+ }
+}

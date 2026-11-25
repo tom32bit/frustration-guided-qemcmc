@@ -1,0 +1,16 @@
+rank 1: E5 usage so far 0 s, estimate 90 s, account remaining 516 s
+rank 1 (P3_roi_FC200 within-set): {"seed_transpiler": 8, "seed_trials_2q": [212, 208, 219, 214, 209, 219, 205, 203, 198, 214], "layout": [22, 23, 21, 16, 3, 4, 2, 1], "two_qubit_count_min_max": [203, 203], "depth_max": 363, "active_qubits_max": 8, "backend": "ibm_kingston", "two_qubit_gate": "cz"}
+submitted job dc17cninj2vs73df08cg
+wrote /home/shafin/Desktop/Tomal/Quantum Stability Resolver/QSR2/results/e5_n8_1_hw.json | usage: 83
+rank 1: job dc17cninj2vs73df08cg used 83 s
+rank 2: E5 usage so far 83 s, estimate 83 s, account remaining 433 s
+rank 2 (P3_roi_FC400 within-set): {"seed_transpiler": 8, "seed_trials_2q": [212, 208, 219, 214, 209, 219, 205, 203, 198, 214], "layout": [22, 23, 21, 16, 3, 4, 2, 1], "two_qubit_count_min_max": [203, 203], "depth_max": 361, "active_qubits_max": 8, "backend": "ibm_kingston", "two_qubit_gate": "cz"}
+submitted job dc17ghlhdvas73bkg300
+wrote /home/shafin/Desktop/Tomal/Quantum Stability Resolver/QSR2/results/e5_n8_2_hw.json | usage: 83
+rank 2: job dc17ghlhdvas73bkg300 used 83 s
+rank 3: E5 usage so far 166 s, estimate 83 s, account remaining 350 s
+rank 3 (P3_roi_FC200 within-set): {"seed_transpiler": 8, "seed_trials_2q": [212, 208, 219, 214, 209, 219, 205, 203, 198, 214], "layout": [22, 23, 21, 16, 3, 4, 2, 1], "two_qubit_count_min_max": [203, 203], "depth_max": 361, "active_qubits_max": 8, "backend": "ibm_kingston", "two_qubit_gate": "cz"}
+submitted job dc17k4ds2omc738a93j0
+wrote /home/shafin/Desktop/Tomal/Quantum Stability Resolver/QSR2/results/e5_n8_3_hw.json | usage: 83
+rank 3: job dc17k4ds2omc738a93j0 used 83 s
+done: E5 proper QPU usage 249 s

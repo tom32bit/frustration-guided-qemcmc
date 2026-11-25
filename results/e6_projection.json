@@ -1,0 +1,156 @@
+{
+ "procedure": "Scaling projection of a per-instance log2 advantage (docs/E6_generality_protocol_2026-11-22.md, endpoint E6-C).\nFixed on 22 Nov 2026, before any E6 row existed and before it was applied to the brain data\n(experiments/scaling_projection_brain.py).\n\nModel: y = a + b n, fitted by ordinary least squares to instance-level data at the fitting sizes. Because y is a log2\nratio, this is an exponential law for the ratio itself, with b the advantage gained per added node (bits per node).\nPrediction for the MEAN of m new instances at a size n* beyond the fit:\n  point   a_hat + b_hat n*\n  95 % prediction interval from a stratified bootstrap with B resamples:\n    1. resample instances with replacement within each (group, size) cell and refit (a_b, b_b);\n    2. add new-sample noise: the mean of m residuals drawn with replacement from that refit's residuals at the largest\n       fitting size;\n    3. take the 2.5 and 97.5 percentiles of a_b + b_b n* + noise.\nThe interval covers the uncertainty of the fitted line and the spread of new instances. It does NOT cover a change of\nthe law beyond the fitted range; that is what the prospective test E6-C checks, one and two sizes ahead.\nVERIFY (tests/test_projection.py): exact on noise-free lines; near-nominal coverage on simulated linear data.\n",
+ "B": 10000,
+ "seed": 47,
+ "fit_sizes": [
+  7,
+  8,
+  9,
+  10
+ ],
+ "test_sizes": [
+  11,
+  12
+ ],
+ "written_at": "2026-11-23T01:41:48+06:00",
+ "rows_by_size_when_written": {
+  "7": 40,
+  "8": 40,
+  "9": 40,
+  "10": 40
+ },
+ "projections": {
+  "all_r": {
+   "fit_sizes": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "instances": 160,
+   "intercept": -3.560602449910545,
+   "slope": 0.523912535009455,
+   "slope_ci95": [
+    0.33924622089880196,
+    0.7115440091409421
+   ],
+   "targets": {
+    "11": {
+     "m": 39,
+     "point": 2.20243543519346,
+     "pi95": [
+      1.2162991991460177,
+      2.8303212470738024
+     ]
+    },
+    "12": {
+     "m": 37,
+     "point": 2.7263479702029145,
+     "pi95": [
+      1.6116238976823167,
+      3.5021759564469233
+     ]
+    }
+   }
+  },
+  "all_s2": {
+   "fit_sizes": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "instances": 160,
+   "intercept": -1.54532675758349,
+   "slope": 0.26029092709698176,
+   "slope_ci95": [
+    0.04234767949855173,
+    0.48257696010798373
+   ],
+   "targets": {
+    "11": {
+     "m": 39,
+     "point": 1.3178734404833095,
+     "pi95": [
+      0.31791936432119694,
+      2.139110706071096
+     ]
+    },
+    "12": {
+     "m": 37,
+     "point": 1.5781643675802912,
+     "pi95": [
+      0.45197846219072757,
+      2.5975853841180525
+     ]
+    }
+   }
+  },
+  "predicted_win_r": {
+   "fit_sizes": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "instances": 81,
+   "intercept": -2.759177476948995,
+   "slope": 0.5403331108672373,
+   "slope_ci95": [
+    0.36734047677362175,
+    0.7207895463502813
+   ],
+   "targets": {
+    "11": {
+     "m": 25,
+     "point": 3.1844867425906154,
+     "pi95": [
+      2.4617389150466025,
+      3.694729484968379
+     ]
+    },
+    "12": {
+     "m": 24,
+     "point": 3.724819853457853,
+     "pi95": [
+      2.8649584708193068,
+      4.377935961401078
+     ]
+    }
+   }
+  },
+  "predicted_win_s2": {
+   "fit_sizes": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "instances": 81,
+   "intercept": 0.3504736106940941,
+   "slope": 0.1566816093894786,
+   "slope_ci95": [
+    -0.09363844226739758,
+    0.40911067398958734
+   ],
+   "targets": {
+    "11": {
+     "m": 25,
+     "point": 2.0739713139783587,
+     "pi95": [
+      1.048893053110661,
+      2.982825294278385
+     ]
+    },
+    "12": {
+     "m": 24,
+     "point": 2.230652923367837,
+     "pi95": [
+      1.0302710874380554,
+      3.3223335524465902
+     ]
+    }
+   }
+  }
+ }
+}

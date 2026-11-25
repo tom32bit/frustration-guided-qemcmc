@@ -1,0 +1,678 @@
+{
+ "note": "POST HOC investigation of the E4-B V3 failure (docs/E4_whole_cortex_protocol_2026-11-22.md, section 7: \"a failed\ncheck is investigated before anything is reported\"). Not pre-registered.\n\nQuestion: is the V3 failure (binding-pair kappa > 1.3) a code error, or does the asymptotic RMSE prediction\nsqrt(s2 / (4N)) simply not describe a run of N recorded steps when N is small?\n\nMethod: for every E4-B run on a network with M = 2^(n-1) <= 256 partitions, compute the EXACT finite-run law of the\nestimator under the sampler's own semantics (qsr2/sampler_numba._one): start at s0 = argmin(Er); apply `burn` steps;\nrecord the next N states X_1..X_N; p_hat = (1 + mean_t f(X_t)) / 2. With g = f - E_pi f:\n  E[p_hat] - p   = (1 / 2N) sum_t mu_t g,          mu_t = delta_{s0} P^(burn + t)\n  E[(p_hat-p)^2] = (1 / 4N^2) sum_t mu_t (g^2 + 2 g F_t),   F_N = 0,  F_t = P (g + F_(t+1))\nP is the chain's exact partition-space kernel (the matrix whose rows the sampler draws from, or the MH matrix built\nfrom the same proposal). Compared with the realised replicate values stored in results/e4_run_rows.jsonl:\n  kappa_exact = exact finite-run RMSE / predicted RMSE  (what kappa should be, up to replicate noise)\n  bias z      = (realised mean - exact mean) / (exact SD / sqrt(R))\n  SD ratio    = realised SD / exact SD\nIf the sampler is correct, the realised values match the exact finite-run law within replicate noise, whatever the\nasymptotic prediction says. Writes results/e4_v3_investigation.json.\n",
+ "runs_checked": 28,
+ "runs": [
+  {
+   "ds": "FC100",
+   "roi": "LH_Limbic",
+   "n": 3,
+   "chain": "wolff",
+   "burn": 11,
+   "steps": 2,
+   "R": 200,
+   "binding_pair": 0,
+   "binding_kappa_realised": 2.0404732022769005,
+   "binding_kappa_exact_finite": 1.0000430042029673,
+   "binding_min_p": 0.0005996832735990498,
+   "max_abs_bias_z": 1.724948141419576,
+   "sd_ratio_range": [
+    0.0,
+    2.1832289236308866
+   ],
+   "realised_over_exact_rmse_range": [
+    0.012863460774408333,
+    2.181177049385609
+   ],
+   "pairs_with_nonzero_spread": 3,
+   "pairs": 3
+  },
+  {
+   "ds": "FC100",
+   "roi": "LH_Cont",
+   "n": 4,
+   "chain": "wolff",
+   "burn": 16,
+   "steps": 847,
+   "R": 200,
+   "binding_pair": 1,
+   "binding_kappa_realised": 1.0138314036794382,
+   "binding_kappa_exact_finite": 0.999784215480893,
+   "binding_min_p": 0.39808124699593406,
+   "max_abs_bias_z": 1.2292075092161145,
+   "sd_ratio_range": [
+    0.9123787729386469,
+    1.0225020906629427
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9103766507250969,
+    1.0231378679556573
+   ],
+   "pairs_with_nonzero_spread": 6,
+   "pairs": 6
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_SalVentAttn",
+   "n": 5,
+   "chain": "wolff",
+   "burn": 11,
+   "steps": 1,
+   "R": 200,
+   "binding_pair": 2,
+   "binding_kappa_realised": 0.0033546623746839774,
+   "binding_kappa_exact_finite": 1.0000100771335803,
+   "binding_min_p": 1.1253406199673854e-05,
+   "max_abs_bias_z": 0.04744161219914475,
+   "sd_ratio_range": [
+    0.0,
+    0.0
+   ],
+   "realised_over_exact_rmse_range": [
+    4.164106834715535e-05,
+    0.003354628569643769
+   ],
+   "pairs_with_nonzero_spread": 10,
+   "pairs": 10
+  },
+  {
+   "ds": "FC100",
+   "roi": "LH_SomMot",
+   "n": 6,
+   "chain": "wolff",
+   "burn": 11,
+   "steps": 1,
+   "R": 200,
+   "binding_pair": 0,
+   "binding_kappa_realised": 0.0003286202456382673,
+   "binding_kappa_exact_finite": 0.9999914187263277,
+   "binding_min_p": 1.0799310756759439e-07,
+   "max_abs_bias_z": 0.004647431963405707,
+   "sd_ratio_range": [
+    0.0,
+    0.0
+   ],
+   "realised_over_exact_rmse_range": [
+    6.742018532711864e-05,
+    0.00032862306564272856
+   ],
+   "pairs_with_nonzero_spread": 15,
+   "pairs": 15
+  },
+  {
+   "ds": "FC100",
+   "roi": "LH_SalVentAttn",
+   "n": 7,
+   "chain": "wolff",
+   "burn": 12,
+   "steps": 1,
+   "R": 200,
+   "binding_pair": 10,
+   "binding_kappa_realised": 0.0009245269645482285,
+   "binding_kappa_exact_finite": 0.8541867261277293,
+   "binding_min_p": 1.1714749843516614e-06,
+   "max_abs_bias_z": 0.015306706744259699,
+   "sd_ratio_range": [
+    0.0,
+    0.0
+   ],
+   "realised_over_exact_rmse_range": [
+    1.324028575305616e-05,
+    0.0010823476135474164
+   ],
+   "pairs_with_nonzero_spread": 21,
+   "pairs": 21
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_DorsAttn",
+   "n": 7,
+   "chain": "wolff",
+   "burn": 105,
+   "steps": 2,
+   "R": 200,
+   "binding_pair": 18,
+   "binding_kappa_realised": 0.00228978405973342,
+   "binding_kappa_exact_finite": 0.3386044732705487,
+   "binding_min_p": 4.2150784061889546e-05,
+   "max_abs_bias_z": 0.22871060609216062,
+   "sd_ratio_range": [
+    0.0,
+    0.0
+   ],
+   "realised_over_exact_rmse_range": [
+    0.0012487605372488411,
+    0.016172291469047678
+   ],
+   "pairs_with_nonzero_spread": 21,
+   "pairs": 21
+  },
+  {
+   "ds": "FC100",
+   "roi": "LH_DorsAttn",
+   "n": 8,
+   "chain": "wolff",
+   "burn": 1099,
+   "steps": 281,
+   "R": 200,
+   "binding_pair": 25,
+   "binding_kappa_realised": 1.5151831148058217,
+   "binding_kappa_exact_finite": 0.8242028123887217,
+   "binding_min_p": 0.0009528583282663039,
+   "max_abs_bias_z": 1.6604870107463965,
+   "sd_ratio_range": [
+    0.0,
+    2.0914323735381015
+   ],
+   "realised_over_exact_rmse_range": [
+    0.018179389646881153,
+    2.0894987208329123
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_SomMot",
+   "n": 8,
+   "chain": "wolff",
+   "burn": 78,
+   "steps": 1,
+   "R": 200,
+   "binding_pair": 15,
+   "binding_kappa_realised": 0.00023121667516122783,
+   "binding_kappa_exact_finite": 0.2765651347590845,
+   "binding_min_p": 6.989354808251136e-07,
+   "max_abs_bias_z": 0.013156898056030923,
+   "sd_ratio_range": [
+    0.0,
+    0.0
+   ],
+   "realised_over_exact_rmse_range": [
+    0.00039876261927414226,
+    0.0009303434490159351
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_Vis",
+   "n": 8,
+   "chain": "local",
+   "burn": 1791,
+   "steps": 6724,
+   "R": 200,
+   "binding_pair": 3,
+   "binding_kappa_realised": 0.8890300348828016,
+   "binding_kappa_exact_finite": 0.9918230610219061,
+   "binding_min_p": 0.09236686149406426,
+   "max_abs_bias_z": 2.589678244177486,
+   "sd_ratio_range": [
+    0.5644519496894621,
+    0.9911918237884532
+   ],
+   "realised_over_exact_rmse_range": [
+    0.569602921163232,
+    0.9897972549340437
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_Vis",
+   "n": 8,
+   "chain": "quantum",
+   "burn": 189,
+   "steps": 2800,
+   "R": 200,
+   "binding_pair": 3,
+   "binding_kappa_realised": 0.9876065832631546,
+   "binding_kappa_exact_finite": 0.9985341026521395,
+   "binding_min_p": 0.09236686149406426,
+   "max_abs_bias_z": 1.1406468391245648,
+   "sd_ratio_range": [
+    0.610126809192996,
+    1.125658366553918
+   ],
+   "realised_over_exact_rmse_range": [
+    0.6109490607455279,
+    1.1230450742706024
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "FC100",
+   "roi": "LH_Vis",
+   "n": 9,
+   "chain": "local",
+   "burn": 1263,
+   "steps": 5162,
+   "R": 200,
+   "binding_pair": 2,
+   "binding_kappa_realised": 1.0313686249423577,
+   "binding_kappa_exact_finite": 0.9991929618002076,
+   "binding_min_p": 0.17194625776463857,
+   "max_abs_bias_z": 1.8854832552956782,
+   "sd_ratio_range": [
+    0.0,
+    1.2805601905116084
+   ],
+   "realised_over_exact_rmse_range": [
+    0.027091295382432483,
+    1.284293760775936
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  },
+  {
+   "ds": "FC100",
+   "roi": "LH_Vis",
+   "n": 9,
+   "chain": "quantum",
+   "burn": 133,
+   "steps": 3810,
+   "R": 200,
+   "binding_pair": 2,
+   "binding_kappa_realised": 1.0121685002178635,
+   "binding_kappa_exact_finite": 0.9991906833550005,
+   "binding_min_p": 0.17194625776463857,
+   "max_abs_bias_z": 1.3780281848018283,
+   "sd_ratio_range": [
+    0.0,
+    1.1910866293331972
+   ],
+   "realised_over_exact_rmse_range": [
+    0.03876208505364381,
+    1.1884241968096276
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_Cont",
+   "n": 9,
+   "chain": "uniform",
+   "burn": 933,
+   "steps": 104092,
+   "R": 200,
+   "binding_pair": 33,
+   "binding_kappa_realised": 1.0469909715937356,
+   "binding_kappa_exact_finite": 0.999564218471683,
+   "binding_min_p": 0.38921158672551315,
+   "max_abs_bias_z": 1.1574843319215624,
+   "sd_ratio_range": [
+    0.8459723178828177,
+    1.080892877920751
+   ],
+   "realised_over_exact_rmse_range": [
+    0.8441402638719578,
+    1.0806352279674543
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  },
+  {
+   "ds": "FC100",
+   "roi": "RH_Cont",
+   "n": 9,
+   "chain": "quantum",
+   "burn": 110,
+   "steps": 8712,
+   "R": 200,
+   "binding_pair": 19,
+   "binding_kappa_realised": 1.061581386750541,
+   "binding_kappa_exact_finite": 0.9995132284135947,
+   "binding_min_p": 0.29075619052590507,
+   "max_abs_bias_z": 1.5212171336147868,
+   "sd_ratio_range": [
+    0.9521136511272368,
+    1.1194142942221104
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9497408283733408,
+    1.1217199034863914
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_Limbic",
+   "n": 3,
+   "chain": "local",
+   "burn": 20,
+   "steps": 1630,
+   "R": 200,
+   "binding_pair": 1,
+   "binding_kappa_realised": 0.9265256950893384,
+   "binding_kappa_exact_finite": 0.999612168732487,
+   "binding_min_p": 0.35019930128550225,
+   "max_abs_bias_z": 0.8902671335902873,
+   "sd_ratio_range": [
+    0.9275496343311505,
+    1.0579071647684646
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9268851701397126,
+    1.0571350949185228
+   ],
+   "pairs_with_nonzero_spread": 3,
+   "pairs": 3
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_Cont",
+   "n": 4,
+   "chain": "sw",
+   "burn": 20,
+   "steps": 625,
+   "R": 200,
+   "binding_pair": 0,
+   "binding_kappa_realised": 0.9351791272264364,
+   "binding_kappa_exact_finite": 0.9999999999999998,
+   "binding_min_p": 0.5,
+   "max_abs_bias_z": 1.0182337649085478,
+   "sd_ratio_range": [
+    0.9362020999011367,
+    1.0439909202620796
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9346314781773616,
+    1.0434915716997952
+   ],
+   "pairs_with_nonzero_spread": 6,
+   "pairs": 6
+  },
+  {
+   "ds": "SC100",
+   "roi": "RH_SalVentAttn",
+   "n": 5,
+   "chain": "wolff",
+   "burn": 46,
+   "steps": 1253,
+   "R": 200,
+   "binding_pair": 8,
+   "binding_kappa_realised": 0.9993894791248652,
+   "binding_kappa_exact_finite": 0.9984083964181483,
+   "binding_min_p": 0.06628865685158569,
+   "max_abs_bias_z": 1.2718370676056985,
+   "sd_ratio_range": [
+    0.9249419868003037,
+    1.0942080420538973
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9227556292794759,
+    1.0951678518410337
+   ],
+   "pairs_with_nonzero_spread": 10,
+   "pairs": 10
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_SomMot",
+   "n": 6,
+   "chain": "local",
+   "burn": 140,
+   "steps": 4238,
+   "R": 200,
+   "binding_pair": 6,
+   "binding_kappa_realised": 1.0218359521246638,
+   "binding_kappa_exact_finite": 0.9994776898379796,
+   "binding_min_p": 0.3291086496308381,
+   "max_abs_bias_z": 1.507899824313178,
+   "sd_ratio_range": [
+    0.8652208786232676,
+    1.0248583644718396
+   ],
+   "realised_over_exact_rmse_range": [
+    0.8693342278288985,
+    1.0223699463369798
+   ],
+   "pairs_with_nonzero_spread": 15,
+   "pairs": 15
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_SalVentAttn",
+   "n": 7,
+   "chain": "local",
+   "burn": 144,
+   "steps": 4923,
+   "R": 200,
+   "binding_pair": 15,
+   "binding_kappa_realised": 0.9732391612873446,
+   "binding_kappa_exact_finite": 0.9994306887350967,
+   "binding_min_p": 0.2470452346698443,
+   "max_abs_bias_z": 1.8321904062791292,
+   "sd_ratio_range": [
+    0.8937484368160069,
+    1.0514304132352494
+   ],
+   "realised_over_exact_rmse_range": [
+    0.893555107326699,
+    1.0493316804068056
+   ],
+   "pairs_with_nonzero_spread": 21,
+   "pairs": 21
+  },
+  {
+   "ds": "SC100",
+   "roi": "RH_DorsAttn",
+   "n": 7,
+   "chain": "local",
+   "burn": 270,
+   "steps": 16358,
+   "R": 200,
+   "binding_pair": 11,
+   "binding_kappa_realised": 0.9934835944843022,
+   "binding_kappa_exact_finite": 0.9992411569256724,
+   "binding_min_p": 0.206988360026931,
+   "max_abs_bias_z": 1.7480421243908366,
+   "sd_ratio_range": [
+    0.9655808079471117,
+    1.0772870601595612
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9643542451097212,
+    1.074596692379679
+   ],
+   "pairs_with_nonzero_spread": 21,
+   "pairs": 21
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_DorsAttn",
+   "n": 8,
+   "chain": "local",
+   "burn": 152,
+   "steps": 2464,
+   "R": 200,
+   "binding_pair": 9,
+   "binding_kappa_realised": 0.9947253937491306,
+   "binding_kappa_exact_finite": 0.9977719273729037,
+   "binding_min_p": 0.05261268465382263,
+   "max_abs_bias_z": 2.9134684003849682,
+   "sd_ratio_range": [
+    0.45180181958456844,
+    1.0653486554120677
+   ],
+   "realised_over_exact_rmse_range": [
+    0.4664340669648111,
+    1.062993767456372
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_DorsAttn",
+   "n": 8,
+   "chain": "quantum",
+   "burn": 177,
+   "steps": 2741,
+   "R": 200,
+   "binding_pair": 9,
+   "binding_kappa_realised": 1.1131327508490407,
+   "binding_kappa_exact_finite": 0.9978116230789399,
+   "binding_min_p": 0.05261268465382263,
+   "max_abs_bias_z": 2.8474798635146104,
+   "sd_ratio_range": [
+    0.7096199862071046,
+    1.4287313212708674
+   ],
+   "realised_over_exact_rmse_range": [
+    0.7124988316979028,
+    1.4323715786779057
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "SC100",
+   "roi": "RH_SomMot",
+   "n": 8,
+   "chain": "local",
+   "burn": 174,
+   "steps": 5207,
+   "R": 200,
+   "binding_pair": 13,
+   "binding_kappa_realised": 1.0241042400777625,
+   "binding_kappa_exact_finite": 0.9994696709249569,
+   "binding_min_p": 0.25165692418217733,
+   "max_abs_bias_z": 2.2777886793911994,
+   "sd_ratio_range": [
+    0.7612614917535719,
+    1.3030167937584456
+   ],
+   "realised_over_exact_rmse_range": [
+    0.7603680986377059,
+    1.3073384898135798
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "SC100",
+   "roi": "RH_Vis",
+   "n": 8,
+   "chain": "local",
+   "burn": 618,
+   "steps": 5447,
+   "R": 200,
+   "binding_pair": 10,
+   "binding_kappa_realised": 1.054645281005408,
+   "binding_kappa_exact_finite": 0.9991606306061257,
+   "binding_min_p": 0.4663613697359858,
+   "max_abs_bias_z": 1.0457113189222669,
+   "sd_ratio_range": [
+    0.8965792138581921,
+    1.080065247508034
+   ],
+   "realised_over_exact_rmse_range": [
+    0.8965151679611272,
+    1.0776855267512615
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "SC100",
+   "roi": "RH_Vis",
+   "n": 8,
+   "chain": "quantum",
+   "burn": 158,
+   "steps": 2605,
+   "R": 200,
+   "binding_pair": 8,
+   "binding_kappa_realised": 1.0747789959308962,
+   "binding_kappa_exact_finite": 0.9994845135173422,
+   "binding_min_p": 0.47910163328637334,
+   "max_abs_bias_z": 2.0574205987549,
+   "sd_ratio_range": [
+    0.9146546839153612,
+    1.1659031996818674
+   ],
+   "realised_over_exact_rmse_range": [
+    0.9135461265909204,
+    1.1720488172322812
+   ],
+   "pairs_with_nonzero_spread": 28,
+   "pairs": 28
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_Vis",
+   "n": 9,
+   "chain": "local",
+   "burn": 528,
+   "steps": 9885,
+   "R": 200,
+   "binding_pair": 4,
+   "binding_kappa_realised": 0.9885371643197934,
+   "binding_kappa_exact_finite": 0.9992736029991176,
+   "binding_min_p": 0.40619841844999444,
+   "max_abs_bias_z": 1.9544719748339126,
+   "sd_ratio_range": [
+    0.863924704288746,
+    1.1086414703769556
+   ],
+   "realised_over_exact_rmse_range": [
+    0.8634211849328913,
+    1.1067475361643797
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  },
+  {
+   "ds": "SC100",
+   "roi": "LH_Vis",
+   "n": 9,
+   "chain": "quantum",
+   "burn": 154,
+   "steps": 5906,
+   "R": 200,
+   "binding_pair": 14,
+   "binding_kappa_realised": 1.0026299311852331,
+   "binding_kappa_exact_finite": 0.9989279997491072,
+   "binding_min_p": 0.13823535507424556,
+   "max_abs_bias_z": 1.8221807538930197,
+   "sd_ratio_range": [
+    0.9130270690081161,
+    1.1501863836117612
+   ],
+   "realised_over_exact_rmse_range": [
+    0.917369037110007,
+    1.148733790007182
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  },
+  {
+   "ds": "SC100",
+   "roi": "RH_Cont",
+   "n": 9,
+   "chain": "local",
+   "burn": 229,
+   "steps": 9934,
+   "R": 200,
+   "binding_pair": 1,
+   "binding_kappa_realised": 0.9814268484532486,
+   "binding_kappa_exact_finite": 0.9990247316424485,
+   "binding_min_p": 0.12310106665216014,
+   "max_abs_bias_z": 1.581572346132975,
+   "sd_ratio_range": [
+    0.0,
+    1.7281604750078177
+   ],
+   "realised_over_exact_rmse_range": [
+    0.046907005403878876,
+    1.7274584768840937
+   ],
+   "pairs_with_nonzero_spread": 36,
+   "pairs": 36
+  }
+ ]
+}

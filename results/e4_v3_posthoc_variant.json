@@ -1,0 +1,281 @@
+{
+ "note": "POST HOC sensitivity analysis (not pre-registered; does NOT change the pre-registered E4-B verdict).\nV3' = V3 with the near-certain exclusion that the protocol applies to V1 and V2: on each network the binding pair is\nthe pair with the largest predicted variance among pairs with min(p, 1 - p) >= 0.01; networks with no such pair are\nskipped (none of their pairs enters V1 or V2 either). Threshold unchanged (kappa <= 1.3).\nWrites results/e4_v3_posthoc_variant.json.",
+ "tilings": {
+  "FC100": {
+   "H": {
+    "binding": [
+     {
+      "roi": "LH_Cont",
+      "chain": "wolff",
+      "pair_min_p": 0.39808124699593406,
+      "kappa": 1.0138314036794382
+     },
+     {
+      "roi": "RH_Vis",
+      "chain": "quantum",
+      "pair_min_p": 0.09236686149406426,
+      "kappa": 0.9876065832631546
+     },
+     {
+      "roi": "LH_Vis",
+      "chain": "quantum",
+      "pair_min_p": 0.17194625776463857,
+      "kappa": 1.0121685002178635
+     },
+     {
+      "roi": "RH_Cont",
+      "chain": "quantum",
+      "pair_min_p": 0.29075619052590507,
+      "kappa": 1.061581386750541
+     },
+     {
+      "roi": "RH_Default",
+      "chain": "quantum",
+      "pair_min_p": 0.09929338651348674,
+      "kappa": 1.0175679493677399
+     },
+     {
+      "roi": "LH_Default",
+      "chain": "quantum",
+      "pair_min_p": 0.013742352847755601,
+      "kappa": 1.0865318361510032
+     }
+    ],
+    "skipped_all_pairs_near_certain": [
+     "LH_Limbic",
+     "RH_SalVentAttn",
+     "LH_SomMot",
+     "LH_SalVentAttn",
+     "RH_DorsAttn",
+     "LH_DorsAttn",
+     "RH_SomMot"
+    ],
+    "max_binding_kappa": 1.0865318361510032,
+    "V3_variant": true
+   },
+   "C": {
+    "binding": [
+     {
+      "roi": "LH_Cont",
+      "chain": "wolff",
+      "pair_min_p": 0.39808124699593406,
+      "kappa": 1.0138314036794382
+     },
+     {
+      "roi": "RH_Vis",
+      "chain": "local",
+      "pair_min_p": 0.09236686149406426,
+      "kappa": 0.8890300348828016
+     },
+     {
+      "roi": "LH_Vis",
+      "chain": "local",
+      "pair_min_p": 0.17194625776463857,
+      "kappa": 1.0313686249423577
+     },
+     {
+      "roi": "RH_Cont",
+      "chain": "uniform",
+      "pair_min_p": 0.38921158672551315,
+      "kappa": 1.0469909715937356
+     },
+     {
+      "roi": "RH_Default",
+      "chain": "local",
+      "pair_min_p": 0.09929338651348674,
+      "kappa": 1.0005553085336287
+     },
+     {
+      "roi": "LH_Default",
+      "chain": "local",
+      "pair_min_p": 0.013742352847755601,
+      "kappa": 0.8986423055041772
+     }
+    ],
+    "skipped_all_pairs_near_certain": [
+     "LH_Limbic",
+     "RH_SalVentAttn",
+     "LH_SomMot",
+     "LH_SalVentAttn",
+     "RH_DorsAttn",
+     "LH_DorsAttn",
+     "RH_SomMot"
+    ],
+    "max_binding_kappa": 1.0469909715937356,
+    "V3_variant": true
+   }
+  },
+  "SC100": {
+   "H": {
+    "binding": [
+     {
+      "roi": "LH_Limbic",
+      "chain": "local",
+      "pair_min_p": 0.35019930128550225,
+      "kappa": 0.9265256950893384
+     },
+     {
+      "roi": "LH_Cont",
+      "chain": "sw",
+      "pair_min_p": 0.5,
+      "kappa": 0.9351791272264364
+     },
+     {
+      "roi": "RH_SalVentAttn",
+      "chain": "wolff",
+      "pair_min_p": 0.06628865685158569,
+      "kappa": 0.9993894791248652
+     },
+     {
+      "roi": "LH_SomMot",
+      "chain": "local",
+      "pair_min_p": 0.3291086496308381,
+      "kappa": 1.0218359521246638
+     },
+     {
+      "roi": "LH_SalVentAttn",
+      "chain": "local",
+      "pair_min_p": 0.2470452346698443,
+      "kappa": 0.9732391612873446
+     },
+     {
+      "roi": "RH_DorsAttn",
+      "chain": "local",
+      "pair_min_p": 0.206988360026931,
+      "kappa": 0.9934835944843022
+     },
+     {
+      "roi": "LH_DorsAttn",
+      "chain": "quantum",
+      "pair_min_p": 0.05261268465382263,
+      "kappa": 1.1131327508490407
+     },
+     {
+      "roi": "RH_SomMot",
+      "chain": "local",
+      "pair_min_p": 0.25165692418217733,
+      "kappa": 1.0241042400777625
+     },
+     {
+      "roi": "RH_Vis",
+      "chain": "quantum",
+      "pair_min_p": 0.47910163328637334,
+      "kappa": 1.0747789959308962
+     },
+     {
+      "roi": "LH_Vis",
+      "chain": "quantum",
+      "pair_min_p": 0.13823535507424556,
+      "kappa": 1.0026299311852331
+     },
+     {
+      "roi": "RH_Cont",
+      "chain": "local",
+      "pair_min_p": 0.12310106665216014,
+      "kappa": 0.9814268484532486
+     },
+     {
+      "roi": "RH_Default",
+      "chain": "local",
+      "pair_min_p": 0.321000992352949,
+      "kappa": 1.0319652414011182
+     },
+     {
+      "roi": "LH_Default",
+      "chain": "local",
+      "pair_min_p": 0.010639632052319603,
+      "kappa": 1.1083993404497339
+     }
+    ],
+    "skipped_all_pairs_near_certain": [],
+    "max_binding_kappa": 1.1131327508490407,
+    "V3_variant": true
+   },
+   "C": {
+    "binding": [
+     {
+      "roi": "LH_Limbic",
+      "chain": "local",
+      "pair_min_p": 0.35019930128550225,
+      "kappa": 0.9265256950893384
+     },
+     {
+      "roi": "LH_Cont",
+      "chain": "sw",
+      "pair_min_p": 0.5,
+      "kappa": 0.9351791272264364
+     },
+     {
+      "roi": "RH_SalVentAttn",
+      "chain": "wolff",
+      "pair_min_p": 0.06628865685158569,
+      "kappa": 0.9993894791248652
+     },
+     {
+      "roi": "LH_SomMot",
+      "chain": "local",
+      "pair_min_p": 0.3291086496308381,
+      "kappa": 1.0218359521246638
+     },
+     {
+      "roi": "LH_SalVentAttn",
+      "chain": "local",
+      "pair_min_p": 0.2470452346698443,
+      "kappa": 0.9732391612873446
+     },
+     {
+      "roi": "RH_DorsAttn",
+      "chain": "local",
+      "pair_min_p": 0.206988360026931,
+      "kappa": 0.9934835944843022
+     },
+     {
+      "roi": "LH_DorsAttn",
+      "chain": "local",
+      "pair_min_p": 0.05261268465382263,
+      "kappa": 0.9947253937491306
+     },
+     {
+      "roi": "RH_SomMot",
+      "chain": "local",
+      "pair_min_p": 0.25165692418217733,
+      "kappa": 1.0241042400777625
+     },
+     {
+      "roi": "RH_Vis",
+      "chain": "local",
+      "pair_min_p": 0.4663613697359858,
+      "kappa": 1.054645281005408
+     },
+     {
+      "roi": "LH_Vis",
+      "chain": "local",
+      "pair_min_p": 0.40619841844999444,
+      "kappa": 0.9885371643197934
+     },
+     {
+      "roi": "RH_Cont",
+      "chain": "local",
+      "pair_min_p": 0.12310106665216014,
+      "kappa": 0.9814268484532486
+     },
+     {
+      "roi": "RH_Default",
+      "chain": "local",
+      "pair_min_p": 0.321000992352949,
+      "kappa": 1.0319652414011182
+     },
+     {
+      "roi": "LH_Default",
+      "chain": "local",
+      "pair_min_p": 0.010639632052319603,
+      "kappa": 1.1083993404497339
+     }
+    ],
+    "skipped_all_pairs_near_certain": [],
+    "max_binding_kappa": 1.1083993404497339,
+    "V3_variant": true
+   }
+  }
+ }
+}

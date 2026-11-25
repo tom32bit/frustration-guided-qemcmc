@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, data or results, please cite them as below."
+title: "Quantum Stability Resolver (QSR): frustration-guided quantum-enhanced sampling of community uncertainty in brain networks"
+type: software
+version: "2.0.0"
+date-released: "2026-11-23"
+license: MIT
+repository-code: "https://github.com/tom32bit/frustration-guided-qemcmc"
+authors:
+  - given-names: "Abdullah"
+    family-names: "Al Shafin"
+    affiliation: "BRAC University"
+    orcid: "https://orcid.org/0009-0007-6634-6900"
+  - given-names: "S. M. Yousuf Iqbal"
+    family-names: "Tomal"
+    affiliation: "BRAC University"
+    orcid: "https://orcid.org/0009-0000-3391-3824"
+keywords:
+  - quantum-enhanced Markov chain Monte Carlo
+  - community detection
+  - brain networks
+  - connectomics
+  - frustration
+  - QAOA
+  - uncertainty quantification

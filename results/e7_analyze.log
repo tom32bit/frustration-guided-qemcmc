@@ -1,0 +1,194 @@
+E7-K gate: PASS (1444 checks, 0 failures)
+E7-A (best deployable): floor > 0.02 on 12/26 networks (need 14), 104/196 parcels, median floor 0.012, binomial p = 0.72 -> FAIL
+E7-B (oracle QAOA): floor > 0.02 on 17/26 networks (need 14), 153/196 parcels, median floor 0.096, binomial p = 0.084 -> PASS
+Outcome: row 3: some deployable direct sampler meets the target on most networks
+E7-A sensitivity (re-searched borderline networks): {'networks_researched': 0, 'above_eps': 12, 'passes': False, 'changed': {}}
+
+Per network (beta_tilde = 1): best deployable floor [sampler] | oracle floor
+  FC100  LH_Limbic       n= 3  0.0000 [qaoa_kl_p3] | 0.0000
+  FC100  LH_Cont         n= 4  0.0000 [qaoa_kl_p4] | 0.0000
+  FC100  RH_SalVentAttn  n= 5  0.0000 [anneal_T100] | 0.0026
+  FC100  LH_SomMot       n= 6  0.0000 [optimiser] | 0.0034
+  FC100  LH_SalVentAttn  n= 7  0.0000 [anneal_T100] | 0.0139
+  FC100  RH_DorsAttn     n= 7  0.0001 [anneal_T100] | 0.0322
+  FC100  LH_DorsAttn     n= 8  0.0009 [anneal_T100] | 0.1078
+  FC100  RH_SomMot       n= 8  0.0000 [optimiser] | 0.0283
+  FC100  RH_Vis          n= 8  0.0856 [anneal_T30] | 0.2685
+  FC100  LH_Vis          n= 9  0.0683 [anneal_T10] | 0.2900
+  FC100  RH_Cont         n= 9  0.0717 [greedy] | 0.0912
+  FC100  RH_Default      n=11  0.0957 [anneal_T30] | 0.1517
+  FC100  LH_Default      n=13  0.0097 [anneal_T30] | 0.2217
+  SC100  LH_Limbic       n= 3  0.0000 [qaoa_kl_p3] | 0.0000
+  SC100  LH_Cont         n= 4  0.0000 [qaoa_kl_p2] | 0.0000
+  SC100  RH_SalVentAttn  n= 5  0.0042 [qaoa_kl_p4] | 0.0012
+  SC100  LH_SomMot       n= 6  0.0137 [qaoa_energy_p4] | 0.0098
+  SC100  LH_SalVentAttn  n= 7  0.1410 [anneal_T10] | 0.0946
+  SC100  RH_DorsAttn     n= 7  0.1485 [anneal_T10] | 0.1186
+  SC100  LH_DorsAttn     n= 8  0.0504 [anneal_T30] | 0.1595
+  SC100  RH_SomMot       n= 8  0.1361 [anneal_T10] | 0.1098
+  SC100  RH_Vis          n= 8  0.0476 [anneal_T10] | 0.0979
+  SC100  LH_Vis          n= 9  0.0804 [anneal_T10] | 0.1153
+  SC100  RH_Cont         n= 9  0.0793 [anneal_T10] | 0.1856
+  SC100  RH_Default      n=11  0.0761 [anneal_T10] | 0.1365
+  SC100  LH_Default      n=13  0.0080 [anneal_T30] | 0.3108
+  FC200  LH_Limbic       n= 6  0.0486 [anneal_T10] | 0.0617
+  FC200  RH_Limbic       n= 6  0.0413 [anneal_T10] | 0.0407
+  FC200  LH_SalVentAttn  n=11  0.0000 [anneal_T100] | 0.1487
+  FC200  RH_SalVentAttn  n=11  0.0832 [anneal_T10] | 0.1633
+  FC200  LH_Cont         n=13  0.1318 [anneal_T10] | 0.2400
+  FC200  LH_DorsAttn     n=13  0.2791 [anneal_T10] | 0.3521
+  FC200  RH_DorsAttn     n=13  0.2120 [anneal_T10] | 0.3031
+  SC200  LH_Limbic       n= 6  0.0175 [qaoa_energy_p4] | 0.0075
+  SC200  RH_Limbic       n= 6  0.0023 [anneal_T30] | 0.0051
+  SC200  LH_SalVentAttn  n=11  0.1436 [anneal_T10] | 0.2277
+  SC200  RH_SalVentAttn  n=11  0.0879 [anneal_T10] | 0.1254
+  SC200  LH_Cont         n=13  0.0198 [anneal_T30] | 0.3159
+  SC200  LH_DorsAttn     n=13  0.0152 [anneal_T30] | 0.3703
+  SC200  RH_DorsAttn     n=13  0.2380 [anneal_T30] | 0.2745
+  FC400  LH_Limbic       n=13  0.1046 [anneal_T10] | 0.2686
+  FC400  RH_Limbic       n=13  0.0354 [anneal_T30] | 0.3713
+  SC400  LH_Limbic       n=13  0.0002 [anneal_T100] | 0.0895
+  SC400  RH_Limbic       n=13  0.0005 [anneal_T100] | 0.1372
+
+Sampler table (primary, beta_tilde = 1): median floor [IQR], share > eps, mean du, median TV, median log10 SR
+  optimiser        0.096 [0.002, 0.339]  0.62  -0.215  0.098  0.00
+  greedy           0.132 [0.057, 0.343]  0.77  +0.041  0.152  0.00
+  anneal_T1        0.501 [0.448, 0.523]  1.00  +0.734  0.894  0.00
+  anneal_T3        0.365 [0.253, 0.469]  0.96  +0.522  0.514  0.00
+  anneal_T10       0.080 [0.051, 0.133]  0.88  +0.081  0.124  0.00
+  anneal_T30       0.086 [0.005, 0.208]  0.62  -0.136  0.092  0.00
+  anneal_T100      0.096 [0.002, 0.272]  0.62  -0.189  0.098  0.00
+  qaoa_energy_p1   0.497 [0.374, 0.554]  0.96  +0.628  0.708  0.00
+  qaoa_energy_p2   0.315 [0.176, 0.465]  0.92  +0.444  0.421  0.00
+  qaoa_energy_p3   0.205 [0.066, 0.349]  0.88  +0.277  0.296  0.00
+  qaoa_energy_p4   0.156 [0.028, 0.283]  0.77  +0.157  0.212  0.00
+  qaoa_kl_p1       0.497 [0.371, 0.554]  0.96  +0.629  0.709  0.00
+  qaoa_kl_p2       0.307 [0.159, 0.464]  0.88  +0.465  0.423  0.00
+  qaoa_kl_p3       0.205 [0.050, 0.341]  0.81  +0.309  0.291  0.00
+  qaoa_kl_p4       0.147 [0.008, 0.229]  0.65  +0.200  0.183  0.00
+  qaoa_oracle_p1   0.435 [0.352, 0.483]  0.96  +0.666  0.793  0.00
+  qaoa_oracle_p2   0.255 [0.126, 0.369]  0.88  +0.508  0.525  0.00
+  qaoa_oracle_p3   0.163 [0.034, 0.236]  0.77  +0.361  0.320  0.00
+  qaoa_oracle_p4   0.096 [0.005, 0.148]  0.65  +0.254  0.189  0.00
+
+Replication (secondary set): A 11/18, B 16/18
+beta_tilde = 2: primary A 9/26, B 19/26; secondary A 9/18, B 17/18
+Depth trend (median floor, p = 1..4): {'energy': [0.4974130571098706, 0.31523498821894524, 0.20541020700796336, 0.15572460177914257], 'kl': [0.4969938980236521, 0.30706356612080565, 0.2053368312204094, 0.14691476932949807], 'oracle': [0.4354430417689745, 0.25545692859608327, 0.1631597822417611, 0.09626656621973809]}
+Anneal trend (median floor): {'T1': 0.5012243695467116, 'T3': 0.36519733191169834, 'T10': 0.0798799961361544, 'T30': 0.08621586598296552, 'T100': 0.09572149599217339}
+Noise (networks with best deployable floor > eps): {'0.2': 26, '0.5': 26}
+Calls: direct finite on 14/26; median QeMCMC calls a0 1.81e+03, quench 2.67e+03; median a0/direct ratio where finite 307.5
+Uncertainty map: {
+ "FC100": {
+  "parcels": 98,
+  "true": {
+   "mean_u": 0.14131371806293944,
+   "share_u_gt_0.1": 0.25510204081632654
+  },
+  "optimiser": {
+   "mean_u": 0.0,
+   "share_u_gt_0.1": 0.0,
+   "spearman_vs_true": NaN,
+   "mean_abs_du": 0.14131371806293944,
+   "mean_du": -0.14131371806293944
+  },
+  "greedy": {
+   "mean_u": 0.33528638881275175,
+   "share_u_gt_0.1": 0.7857142857142857,
+   "spearman_vs_true": 0.499961164441387,
+   "mean_abs_du": 0.23548851640451254,
+   "mean_du": 0.1939726707498123
+  },
+  "anneal_T100": {
+   "mean_u": 0.004963932743940166,
+   "share_u_gt_0.1": 0.0,
+   "spearman_vs_true": 0.9647941650887157,
+   "mean_abs_du": 0.13635666182896508,
+   "mean_du": -0.13634978531899927
+  },
+  "qaoa_energy_p4": {
+   "mean_u": 0.4017793491241387,
+   "share_u_gt_0.1": 0.7959183673469388,
+   "spearman_vs_true": 0.8299489311914343,
+   "mean_abs_du": 0.2914100506314692,
+   "mean_du": 0.2604656310611993
+  },
+  "qaoa_kl_p4": {
+   "mean_u": 0.40910151726736493,
+   "share_u_gt_0.1": 0.7959183673469388,
+   "spearman_vs_true": 0.8960018871653628,
+   "mean_abs_du": 0.2677878008682313,
+   "mean_du": 0.2677877992044256
+  },
+  "qaoa_oracle_p4": {
+   "mean_u": 0.4513081541778723,
+   "share_u_gt_0.1": 0.7959183673469388,
+   "spearman_vs_true": 0.9074013860464522,
+   "mean_abs_du": 0.30999443617562394,
+   "mean_du": 0.3099944361149328
+  },
+  "best_deployable": {
+   "mean_u": 0.1284030424314654,
+   "share_u_gt_0.1": 0.22448979591836735,
+   "spearman_vs_true": 0.976689565586634,
+   "mean_abs_du": 0.030374613047982207,
+   "mean_du": -0.012910675631474024
+  }
+ },
+ "SC100": {
+  "parcels": 98,
+  "true": {
+   "mean_u": 0.28560908691097503,
+   "share_u_gt_0.1": 0.7244897959183674
+  },
+  "optimiser": {
+   "mean_u": 0.03401360544217687,
+   "share_u_gt_0.1": 0.04081632653061224,
+   "spearman_vs_true": 0.30709683523653586,
+   "mean_abs_du": 0.2515954814687981,
+   "mean_du": -0.2515954814687981
+  },
+  "greedy": {
+   "mean_u": 0.23562972980625152,
+   "share_u_gt_0.1": 0.7244897959183674,
+   "spearman_vs_true": 0.583970411559438,
+   "mean_abs_du": 0.16584747940748792,
+   "mean_du": -0.04997935710472345
+  },
+  "anneal_T100": {
+   "mean_u": 0.0825729334234475,
+   "share_u_gt_0.1": 0.20408163265306123,
+   "spearman_vs_true": 0.7604672068958922,
+   "mean_abs_du": 0.2030361534875275,
+   "mean_du": -0.2030361534875275
+  },
+  "qaoa_energy_p4": {
+   "mean_u": 0.48588626312039557,
+   "share_u_gt_0.1": 0.9693877551020408,
+   "spearman_vs_true": 0.39546181948013037,
+   "mean_abs_du": 0.25130247795097493,
+   "mean_du": 0.20027717620942054
+  },
+  "qaoa_kl_p4": {
+   "mean_u": 0.5163645452809466,
+   "share_u_gt_0.1": 1.0,
+   "spearman_vs_true": 0.5514609778956563,
+   "mean_abs_du": 0.2327912429851003,
+   "mean_du": 0.23075545836997147
+  },
+  "qaoa_oracle_p4": {
+   "mean_u": 0.6127606191702203,
+   "share_u_gt_0.1": 1.0,
+   "spearman_vs_true": 0.30806454697890306,
+   "mean_abs_du": 0.3274561582661693,
+   "mean_du": 0.3271515322592452
+  },
+  "best_deployable": {
+   "mean_u": 0.2999265666084825,
+   "share_u_gt_0.1": 0.7857142857142857,
+   "spearman_vs_true": 0.8359547839614403,
+   "mean_abs_du": 0.07261499087840582,
+   "mean_du": 0.014317479697507452
+  }
+ }
+}
+Optimiser diagnostics: {'first_vs_final_floor': {'energy': {'max': 0.12052280957324613, 'count_gt_0.005': 8, 'cases': 352}, 'kl': {'max': 0.022696172405829662, 'count_gt_0.005': 2, 'cases': 352}}, 'oracle_second_set_gain_gt_1e-6': 9, 'single_start_optima': {'energy': [27, 176], 'kl': [13, 352], 'oracle': [24, 352]}}

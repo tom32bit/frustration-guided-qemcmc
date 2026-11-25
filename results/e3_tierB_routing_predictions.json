@@ -1,0 +1,370 @@
+{
+ "rule": "E3 amendment 13: SEALED routing predictions for the fresh Tier B instances (n = 14, 16), computed from instance\ndata only (couplings, sigma, F) BEFORE any Tier B outcome for these instances exists. Reads no Tier B rows.\n\nTwo-factor rule (from the post hoc Tier A analysis, experiments/e3_posthoc_barrier.py):\n  predicted quantum win  <=>  F >= 0.10  and  beta * D >= 1   (beta = 1 / sigma_ROI, beta_tilde = 1)\nwhere D is the critical depth of the single-node-move energy landscape on partition space.\nWrites results/e3_tierB_routing_predictions.json (refuses to overwrite).\n",
+ "F_threshold": 0.1,
+ "betaD_threshold": 1.0,
+ "written_at": "2026-11-22T02:00:47+06:00",
+ "tierB_rows_at_n14_16_when_written": 0,
+ "instances": [
+  {
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    14,
+    "border-set",
+    0.0469418097,
+    0.0771145903
+   ],
+   "family": "P3_roi_FC200",
+   "n": 14,
+   "F": 0.0771145902900823,
+   "beta_D": 2.028683508708064,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    14,
+    "within-set",
+    0.0961564295,
+    0.151720564
+   ],
+   "family": "P3_roi_FC200",
+   "n": 14,
+   "F": 0.15172056398290637,
+   "beta_D": 2.4316465899332567,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    14,
+    "border-set",
+    0.0695349443,
+    0.0786546355
+   ],
+   "family": "P3_roi_FC200",
+   "n": 14,
+   "F": 0.07865463552538964,
+   "beta_D": 7.016867334177128,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    14,
+    "within-set",
+    0.0578612463,
+    0.1532580241
+   ],
+   "family": "P3_roi_FC200",
+   "n": 14,
+   "F": 0.1532580241217559,
+   "beta_D": 9.411055583835552,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    16,
+    "border-set",
+    0.0445792406,
+    0.101702106
+   ],
+   "family": "P3_roi_FC200",
+   "n": 16,
+   "F": 0.10170210598178483,
+   "beta_D": 4.889097944915029,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC200",
+    "FC200",
+    16,
+    "within-set",
+    0.1196115072,
+    0.0923403348
+   ],
+   "family": "P3_roi_FC200",
+   "n": 16,
+   "F": 0.09234033484221434,
+   "beta_D": 0.9626407648212423,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    14,
+    "border-set",
+    0.047281344,
+    0.1143892295
+   ],
+   "family": "P3_roi_FC400",
+   "n": 14,
+   "F": 0.11438922954601251,
+   "beta_D": 8.220827258820878,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    14,
+    "within-set",
+    0.0762229917,
+    0.1834172008
+   ],
+   "family": "P3_roi_FC400",
+   "n": 14,
+   "F": 0.18341720080127735,
+   "beta_D": 1.9807803771368744,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    14,
+    "border-set",
+    0.0306369531,
+    0.0555588324
+   ],
+   "family": "P3_roi_FC400",
+   "n": 14,
+   "F": 0.05555883238785705,
+   "beta_D": 1.9685291722542844,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    14,
+    "within-set",
+    0.0560022402,
+    0.1222000409
+   ],
+   "family": "P3_roi_FC400",
+   "n": 14,
+   "F": 0.12220004091930883,
+   "beta_D": 9.497472654751615,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    16,
+    "border-set",
+    0.0385655955,
+    0.116922629
+   ],
+   "family": "P3_roi_FC400",
+   "n": 16,
+   "F": 0.11692262904394773,
+   "beta_D": 5.249147668190103,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_FC400",
+    "FC400",
+    16,
+    "within-set",
+    0.1077604914,
+    0.1092987985
+   ],
+   "family": "P3_roi_FC400",
+   "n": 16,
+   "F": 0.10929879846859457,
+   "beta_D": 0.5056459261662557,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_SC200",
+    "SC200",
+    14,
+    "border-set",
+    3.1595675679,
+    0.2242891568
+   ],
+   "family": "P3_roi_SC200",
+   "n": 14,
+   "F": 0.22428915678148498,
+   "beta_D": 6.912792073747427,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC200",
+    "SC200",
+    14,
+    "within-set",
+    3.1662334329,
+    0.1701965512
+   ],
+   "family": "P3_roi_SC200",
+   "n": 14,
+   "F": 0.17019655119769664,
+   "beta_D": 0.24333115454673587,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_SC200",
+    "SC200",
+    14,
+    "border-set",
+    2.543626343,
+    0.2102552732
+   ],
+   "family": "P3_roi_SC200",
+   "n": 14,
+   "F": 0.21025527323569357,
+   "beta_D": 3.607406484534083,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC200",
+    "SC200",
+    14,
+    "within-set",
+    3.5338084519,
+    0.1512327551
+   ],
+   "family": "P3_roi_SC200",
+   "n": 14,
+   "F": 0.15123275507423115,
+   "beta_D": 0.22738267863179032,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_SC200",
+    "SC200",
+    16,
+    "border-set",
+    2.8544034621,
+    0.1998849957
+   ],
+   "family": "P3_roi_SC200",
+   "n": 16,
+   "F": 0.19988499574565455,
+   "beta_D": 6.685271608730077,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC200",
+    "SC200",
+    16,
+    "within-set",
+    3.755740293,
+    0.1087479481
+   ],
+   "family": "P3_roi_SC200",
+   "n": 16,
+   "F": 0.10874794805726058,
+   "beta_D": 0.5041022961720815,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_SC400",
+    "SC400",
+    14,
+    "border-set",
+    2.1010264081,
+    0.1595909832
+   ],
+   "family": "P3_roi_SC400",
+   "n": 14,
+   "F": 0.15959098322726056,
+   "beta_D": 5.765748513830327,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC400",
+    "SC400",
+    14,
+    "within-set",
+    2.9157566276,
+    0.1784835375
+   ],
+   "family": "P3_roi_SC400",
+   "n": 14,
+   "F": 0.17848353750449686,
+   "beta_D": 6.070280917540259,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC400",
+    "SC400",
+    14,
+    "border-set",
+    2.6256456392,
+    0.1283387101
+   ],
+   "family": "P3_roi_SC400",
+   "n": 14,
+   "F": 0.12833871008656705,
+   "beta_D": 5.42959040567349,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC400",
+    "SC400",
+    14,
+    "within-set",
+    2.3967295206,
+    0.1435481534
+   ],
+   "family": "P3_roi_SC400",
+   "n": 14,
+   "F": 0.14354815343803173,
+   "beta_D": 0.15992159528989855,
+   "predicted_quantum_win": false
+  },
+  {
+   "key": [
+    "P3_roi_SC400",
+    "SC400",
+    16,
+    "border-set",
+    2.0059550601,
+    0.1541295182
+   ],
+   "family": "P3_roi_SC400",
+   "n": 16,
+   "F": 0.1541295181738312,
+   "beta_D": 3.02545036694457,
+   "predicted_quantum_win": true
+  },
+  {
+   "key": [
+    "P3_roi_SC400",
+    "SC400",
+    16,
+    "within-set",
+    2.4057120063,
+    0.1804386356
+   ],
+   "family": "P3_roi_SC400",
+   "n": 16,
+   "F": 0.1804386355672792,
+   "beta_D": 3.0832359718502658,
+   "predicted_quantum_win": true
+  }
+ ],
+ "predicted_wins": 15
+}

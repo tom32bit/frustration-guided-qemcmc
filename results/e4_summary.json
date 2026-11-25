@@ -1,0 +1,545 @@
+{
+ "stage": "full",
+ "routing_written_at": "2026-11-22T21:48:52+06:00",
+ "rows_when_routing_written": 0,
+ "tilings": {
+  "FC100": {
+   "rois": 13,
+   "parcels": 98,
+   "routed": [
+    "RH_Vis",
+    "LH_Vis",
+    "RH_Cont",
+    "RH_Default",
+    "LH_Default"
+   ],
+   "rho": 0.16616729377287953,
+   "E4A_pass": true,
+   "material_saving": true,
+   "secondary": {
+    "beta2": 0.0928234249831382,
+    "qaoa_a0": 0.166588291386628,
+    "noisy_0.2": 0.204374996032755,
+    "noisy_0.5": 0.3118440439788328,
+    "oracle_routing": 0.16286251119450845,
+    "quantum_everywhere": 0.18093345307089617,
+    "mean_aggregator": 0.11551574443003597,
+    "routing_efficiency": 0.9960522821847501,
+    "deployable_single_chain": {
+     "local": 0.023251510272640077,
+     "label_swap": 0.018791941422720497,
+     "uniform": 0.0256499128246233,
+     "sw": 0.0017825648614840412,
+     "wolff": 0.0032794185890945497,
+     "heat_bath": 0.03736060747166884
+    },
+    "best_single_classical_chain": "heat_bath",
+    "oracle_vs_best_single_chain_cost": 0.1878831236990452,
+    "leave_one_roi_out_range": [
+     0.14096259334328323,
+     0.6385378366760872
+    ],
+    "not_previously_inspected": {
+     "rois": [
+      "LH_Limbic",
+      "RH_Default",
+      "LH_Default"
+     ],
+     "rho": 0.7493420331802829
+    },
+    "routing_accuracy": {
+     "routed_and_quantum_cheaper": 4,
+     "routed": 5,
+     "not_routed_and_classical_cheaper": 7,
+     "not_routed": 8
+    }
+   },
+   "primary": true,
+   "E4B": {
+    "H": {
+     "pairs_entering": 70,
+     "pairs_excluded_near_certain": 295,
+     "max_abs_z": 2.3427432362846785,
+     "z_threshold": 4.339423257645864,
+     "V1": true,
+     "median_kappa": 1.0164245112323846,
+     "V2": true,
+     "binding": [
+      {
+       "roi": "LH_Limbic",
+       "chain": "wolff",
+       "kappa": 2.0404732022769005
+      },
+      {
+       "roi": "LH_Cont",
+       "chain": "wolff",
+       "kappa": 1.0138314036794382
+      },
+      {
+       "roi": "RH_SalVentAttn",
+       "chain": "wolff",
+       "kappa": 0.0033546623746839774
+      },
+      {
+       "roi": "LH_SomMot",
+       "chain": "wolff",
+       "kappa": 0.0003286202456382673
+      },
+      {
+       "roi": "LH_SalVentAttn",
+       "chain": "wolff",
+       "kappa": 0.0009245269645482285
+      },
+      {
+       "roi": "RH_DorsAttn",
+       "chain": "wolff",
+       "kappa": 0.00228978405973342
+      },
+      {
+       "roi": "LH_DorsAttn",
+       "chain": "wolff",
+       "kappa": 1.5151831148058217
+      },
+      {
+       "roi": "RH_SomMot",
+       "chain": "wolff",
+       "kappa": 0.00023121667516122783
+      },
+      {
+       "roi": "RH_Vis",
+       "chain": "quantum",
+       "kappa": 0.9876065832631546
+      },
+      {
+       "roi": "LH_Vis",
+       "chain": "quantum",
+       "kappa": 1.0121685002178635
+      },
+      {
+       "roi": "RH_Cont",
+       "chain": "quantum",
+       "kappa": 1.061581386750541
+      },
+      {
+       "roi": "RH_Default",
+       "chain": "quantum",
+       "kappa": 1.0175679493677399
+      },
+      {
+       "roi": "LH_Default",
+       "chain": "quantum",
+       "kappa": 1.0865318361510032
+      }
+     ],
+     "max_binding_kappa": 2.0404732022769005,
+     "V3": false,
+     "total_proposals": 22562.0
+    },
+    "C": {
+     "pairs_entering": 70,
+     "pairs_excluded_near_certain": 295,
+     "max_abs_z": 1.6432880469388949,
+     "z_threshold": 4.339423257645864,
+     "V1": true,
+     "median_kappa": 1.0062988973929046,
+     "V2": true,
+     "binding": [
+      {
+       "roi": "LH_Limbic",
+       "chain": "wolff",
+       "kappa": 2.0404732022769005
+      },
+      {
+       "roi": "LH_Cont",
+       "chain": "wolff",
+       "kappa": 1.0138314036794382
+      },
+      {
+       "roi": "RH_SalVentAttn",
+       "chain": "wolff",
+       "kappa": 0.0033546623746839774
+      },
+      {
+       "roi": "LH_SomMot",
+       "chain": "wolff",
+       "kappa": 0.0003286202456382673
+      },
+      {
+       "roi": "LH_SalVentAttn",
+       "chain": "wolff",
+       "kappa": 0.0009245269645482285
+      },
+      {
+       "roi": "RH_DorsAttn",
+       "chain": "wolff",
+       "kappa": 0.00228978405973342
+      },
+      {
+       "roi": "LH_DorsAttn",
+       "chain": "wolff",
+       "kappa": 1.5151831148058217
+      },
+      {
+       "roi": "RH_SomMot",
+       "chain": "wolff",
+       "kappa": 0.00023121667516122783
+      },
+      {
+       "roi": "RH_Vis",
+       "chain": "local",
+       "kappa": 0.8890300348828016
+      },
+      {
+       "roi": "LH_Vis",
+       "chain": "local",
+       "kappa": 1.0313686249423577
+      },
+      {
+       "roi": "RH_Cont",
+       "chain": "uniform",
+       "kappa": 1.0469909715937356
+      },
+      {
+       "roi": "RH_Default",
+       "chain": "local",
+       "kappa": 1.0005553085336287
+      },
+      {
+       "roi": "LH_Default",
+       "chain": "local",
+       "kappa": 0.8986423055041772
+      }
+     ],
+     "max_binding_kappa": 2.0404732022769005,
+     "V3": false,
+     "total_proposals": 132818.0
+    },
+    "rho_B": 0.1698715535544881,
+    "checks_pass": false
+   },
+   "end_to_end_pass": false
+  },
+  "SC100": {
+   "rois": 13,
+   "parcels": 98,
+   "routed": [
+    "LH_DorsAttn",
+    "RH_Vis",
+    "LH_Vis"
+   ],
+   "rho": 0.907277030544287,
+   "E4A_pass": true,
+   "material_saving": false,
+   "secondary": {
+    "beta2": 0.775639402948599,
+    "qaoa_a0": 1.030436414286756,
+    "noisy_0.2": 0.9449347208281261,
+    "noisy_0.5": 1.047286759680283,
+    "oracle_routing": 0.4914943546687535,
+    "quantum_everywhere": 0.5496428717358248,
+    "mean_aggregator": 0.8796351704507873,
+    "routing_efficiency": 0.18234403158948648,
+    "deployable_single_chain": {
+     "local": 0.909322041330836,
+     "label_swap": 0.8284561776254108,
+     "uniform": 0.8519685844070211,
+     "sw": 0.6227290837675791,
+     "wolff": 0.6237164521139322,
+     "heat_bath": 0.7885270695418329
+    },
+    "best_single_classical_chain": "local",
+    "oracle_vs_best_single_chain_cost": 0.9779449385782911,
+    "leave_one_roi_out_range": [
+     0.8792930582504707,
+     0.9577383081562167
+    ],
+    "not_previously_inspected": {
+     "rois": [
+      "LH_Limbic",
+      "RH_Default",
+      "LH_Default"
+     ],
+     "rho": 1.0
+    },
+    "routing_accuracy": {
+     "routed_and_quantum_cheaper": 2,
+     "routed": 3,
+     "not_routed_and_classical_cheaper": 4,
+     "not_routed": 10
+    }
+   },
+   "primary": true,
+   "E4B": {
+    "H": {
+     "pairs_entering": 165,
+     "pairs_excluded_near_certain": 200,
+     "max_abs_z": 2.841246900663256,
+     "z_threshold": 4.524263916059753,
+     "V1": true,
+     "median_kappa": 1.0166579833483913,
+     "V2": true,
+     "binding": [
+      {
+       "roi": "LH_Limbic",
+       "chain": "local",
+       "kappa": 0.9265256950893384
+      },
+      {
+       "roi": "LH_Cont",
+       "chain": "sw",
+       "kappa": 0.9351791272264364
+      },
+      {
+       "roi": "RH_SalVentAttn",
+       "chain": "wolff",
+       "kappa": 0.9993894791248652
+      },
+      {
+       "roi": "LH_SomMot",
+       "chain": "local",
+       "kappa": 1.0218359521246638
+      },
+      {
+       "roi": "LH_SalVentAttn",
+       "chain": "local",
+       "kappa": 0.9732391612873446
+      },
+      {
+       "roi": "RH_DorsAttn",
+       "chain": "local",
+       "kappa": 0.9934835944843022
+      },
+      {
+       "roi": "LH_DorsAttn",
+       "chain": "quantum",
+       "kappa": 1.1131327508490407
+      },
+      {
+       "roi": "RH_SomMot",
+       "chain": "local",
+       "kappa": 1.0241042400777625
+      },
+      {
+       "roi": "RH_Vis",
+       "chain": "quantum",
+       "kappa": 1.0747789959308962
+      },
+      {
+       "roi": "LH_Vis",
+       "chain": "quantum",
+       "kappa": 1.0026299311852331
+      },
+      {
+       "roi": "RH_Cont",
+       "chain": "local",
+       "kappa": 0.9814268484532486
+      },
+      {
+       "roi": "RH_Default",
+       "chain": "local",
+       "kappa": 1.0319652414011182
+      },
+      {
+       "roi": "LH_Default",
+       "chain": "local",
+       "kappa": 1.1083993404497339
+      }
+     ],
+     "max_binding_kappa": 1.1131327508490407,
+     "V3": true,
+     "total_proposals": 65877.0
+    },
+    "C": {
+     "pairs_entering": 165,
+     "pairs_excluded_near_certain": 200,
+     "max_abs_z": 2.9070953774763666,
+     "z_threshold": 4.524263916059753,
+     "V1": true,
+     "median_kappa": 0.9947253937491306,
+     "V2": true,
+     "binding": [
+      {
+       "roi": "LH_Limbic",
+       "chain": "local",
+       "kappa": 0.9265256950893384
+      },
+      {
+       "roi": "LH_Cont",
+       "chain": "sw",
+       "kappa": 0.9351791272264364
+      },
+      {
+       "roi": "RH_SalVentAttn",
+       "chain": "wolff",
+       "kappa": 0.9993894791248652
+      },
+      {
+       "roi": "LH_SomMot",
+       "chain": "local",
+       "kappa": 1.0218359521246638
+      },
+      {
+       "roi": "LH_SalVentAttn",
+       "chain": "local",
+       "kappa": 0.9732391612873446
+      },
+      {
+       "roi": "RH_DorsAttn",
+       "chain": "local",
+       "kappa": 0.9934835944843022
+      },
+      {
+       "roi": "LH_DorsAttn",
+       "chain": "local",
+       "kappa": 0.9947253937491306
+      },
+      {
+       "roi": "RH_SomMot",
+       "chain": "local",
+       "kappa": 1.0241042400777625
+      },
+      {
+       "roi": "RH_Vis",
+       "chain": "local",
+       "kappa": 1.054645281005408
+      },
+      {
+       "roi": "LH_Vis",
+       "chain": "local",
+       "kappa": 0.9885371643197934
+      },
+      {
+       "roi": "RH_Cont",
+       "chain": "local",
+       "kappa": 0.9814268484532486
+      },
+      {
+       "roi": "RH_Default",
+       "chain": "local",
+       "kappa": 1.0319652414011182
+      },
+      {
+       "roi": "LH_Default",
+       "chain": "local",
+       "kappa": 1.1083993404497339
+      }
+     ],
+     "max_binding_kappa": 1.1083993404497339,
+     "V3": true,
+     "total_proposals": 73230.0
+    },
+    "rho_B": 0.8995903318312167,
+    "checks_pass": true
+   },
+   "end_to_end_pass": true
+  },
+  "FC200": {
+   "rois": 7,
+   "parcels": 73,
+   "routed": [
+    "RH_Limbic",
+    "LH_SalVentAttn",
+    "RH_SalVentAttn",
+    "LH_Cont",
+    "LH_DorsAttn",
+    "RH_DorsAttn"
+   ],
+   "rho": 0.014250886300467199,
+   "E4A_pass": true,
+   "material_saving": true,
+   "secondary": {
+    "beta2": 0.010517719576803043,
+    "qaoa_a0": 0.04884590910955598,
+    "noisy_0.2": 0.017896198461757523,
+    "noisy_0.5": 0.028616739220397217,
+    "oracle_routing": 0.014250886300467199,
+    "quantum_everywhere": 0.015521659931341601,
+    "mean_aggregator": 0.012055442791935754,
+    "routing_efficiency": 1.0,
+    "deployable_single_chain": {
+     "local": 0.0006650173809516199,
+     "label_swap": 0.000533376113096755,
+     "uniform": 0.0065662552229556175,
+     "sw": 1.6073767731598977e-05,
+     "wolff": 3.182426560929184e-05,
+     "heat_bath": 0.0068139905825957475
+    },
+    "best_single_classical_chain": "heat_bath",
+    "oracle_vs_best_single_chain_cost": 0.4322222664702628,
+    "leave_one_roi_out_range": [
+     0.010873233422289104,
+     0.06774833982154022
+    ],
+    "not_previously_inspected": {
+     "rois": [
+      "LH_Cont",
+      "LH_DorsAttn",
+      "RH_DorsAttn"
+     ],
+     "rho": 0.012144351078461652
+    },
+    "routing_accuracy": {
+     "routed_and_quantum_cheaper": 6,
+     "routed": 6,
+     "not_routed_and_classical_cheaper": 1,
+     "not_routed": 1
+    }
+   },
+   "primary": false
+  },
+  "SC200": {
+   "rois": 7,
+   "parcels": 73,
+   "routed": [
+    "RH_SalVentAttn",
+    "LH_Cont",
+    "LH_DorsAttn",
+    "RH_DorsAttn"
+   ],
+   "rho": 0.013411440909827634,
+   "E4A_pass": true,
+   "material_saving": true,
+   "secondary": {
+    "beta2": 0.013802756595217878,
+    "qaoa_a0": 0.01973973387534025,
+    "noisy_0.2": 0.01569216054008467,
+    "noisy_0.5": 0.022387516035293275,
+    "oracle_routing": 0.011632002783190785,
+    "quantum_everywhere": 0.011751543895201421,
+    "mean_aggregator": 0.013460847498313066,
+    "routing_efficiency": 0.9981996198464057,
+    "deployable_single_chain": {
+     "local": 0.004146050319674318,
+     "label_swap": 0.002827574249572737,
+     "uniform": 0.16170850331403555,
+     "sw": 0.0008763595949179647,
+     "wolff": 0.0008793589005789535,
+     "heat_bath": 0.14063805140582006
+    },
+    "best_single_classical_chain": "heat_bath",
+    "oracle_vs_best_single_chain_cost": 0.6757636757373877,
+    "leave_one_roi_out_range": [
+     0.01043050362258732,
+     0.07039754225951338
+    ],
+    "not_previously_inspected": {
+     "rois": [
+      "LH_Cont",
+      "LH_DorsAttn",
+      "RH_DorsAttn"
+     ],
+     "rho": 0.006831763639427331
+    },
+    "routing_accuracy": {
+     "routed_and_quantum_cheaper": 3,
+     "routed": 4,
+     "not_routed_and_classical_cheaper": 1,
+     "not_routed": 3
+    }
+   },
+   "primary": false
+  }
+ },
+ "G2_end_to_end_met": true,
+ "E4A_pass_any_primary": true
+}

@@ -1,0 +1,2 @@
+{'parent_key': ['P3_roi_FC200', 'FC200', 12, 'border-set', 0.056181557, 0.1085752254], 'keys_compared': 39, 'max_rel_diff': 2.0959721824928492e-08, 'worst_key': 'b2.0_sw_lumped', 'seconds': 277.7}
+{'parent_key': ['P3_roi_SC200', 'SC200', 12, 'border-set', 3.2326860809, 0.1249466691], 'keys_compared': 39, 'max_rel_diff': 8.62116460740719e-12, 'worst_key': 'b1.0_uniform_lumped', 'seconds': 269.8}
