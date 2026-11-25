@@ -5,6 +5,7 @@ type: software
 version: "2.0.0"
 date-released: "2026-11-25"
 license: MIT
+doi: "10.5281/zenodo.24533786"
 repository-code: "https://github.com/tom32bit/frustration-guided-qemcmc"
 authors:
   - given-names: "Abdullah"

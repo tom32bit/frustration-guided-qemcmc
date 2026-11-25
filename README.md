@@ -1,5 +1,7 @@
 # Frustration-guided quantum-enhanced sampling of community uncertainty in brain networks
 
+[![DOI](https://zenodo.org/badge/1471688848.svg)](https://doi.org/10.5281/zenodo.24533786)
+
 Code and data for the paper of the same title, which introduces the Quantum Stability Resolver (QSR). The paper
 itself is not part of this repository.
 
@@ -94,7 +96,8 @@ make verify      # check every file against the newest SHA-256 manifest in resul
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff).
+Please cite the archive by its DOI, [10.5281/zenodo.24533786](https://doi.org/10.5281/zenodo.24533786),
+which always resolves to the latest version. See also [`CITATION.cff`](CITATION.cff).
 
 ## License
 
