@@ -1,4 +1,4 @@
-"""QSR 2.0 - frustration-guided quantum-enhanced sampling of network-partition uncertainty.
+"""FG-QeMCMC (package qsr2) - frustration-guided quantum-enhanced sampling of network-partition uncertainty.
 
 Modules
   networks   : connectome loading, weighted Leiden, modularity matrix, co-assignment / entropy (fixed QSR v1 pieces)

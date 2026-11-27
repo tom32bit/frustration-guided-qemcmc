@@ -1,4 +1,4 @@
-"""Drawing data for Fig. 1 (how QSR works). No test and no new claim: every quantity uses the definitions of the
+"""Drawing data for Fig. 1 (how FG-QeMCMC works). No test and no new claim: every quantity uses the definitions of the
 analyses, for one real network, so the figure shows data rather than an illustration.
 
   cortex   the Schaefer-100 FC connectome split into the 13 canonical networks of the whole-cortex maps (E4 tiling),

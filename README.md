@@ -2,17 +2,21 @@
 
 [![DOI](https://zenodo.org/badge/1471688848.svg)](https://doi.org/10.5281/zenodo.24533786)
 
-Code and data for the paper of the same title, which introduces the Quantum Stability Resolver (QSR). The paper
-itself is not part of this repository.
+Code and data for the paper of the same title, which introduces frustration-guided quantum-enhanced Markov chain
+Monte Carlo (FG-QeMCMC). The paper itself is not part of this repository.
 
 **Authors** (BRAC University, Dhaka, Bangladesh):
 
 - Abdullah Al Shafin, [ORCID 0009-0007-6634-6900](https://orcid.org/0009-0007-6634-6900)
 - S. M. Yousuf Iqbal Tomal (corresponding author), [ORCID 0009-0000-3391-3824](https://orcid.org/0009-0000-3391-3824)
 
-QSR samples the uncertainty of community structure in brain networks with quantum-enhanced Markov chain Monte Carlo
-(QeMCMC). A quantum circuit proposes moves, a Metropolis step keeps the chain exact, and a frustration-based rule sends
-only the sub-networks where quantum proposals help to the quantum device.
+FG-QeMCMC samples the uncertainty of community structure in brain networks with quantum-enhanced Markov chain Monte
+Carlo (QeMCMC). A quantum circuit proposes moves, a Metropolis step keeps the chain exact, and a frustration-based rule
+sends only the sub-networks where quantum proposals help to the quantum device.
+
+**Earlier name.** Up to version 2.0.1 this archive called the method the Quantum Stability Resolver (QSR). Files
+that record the work as it was done keep that name: the analysis plans in `docs/`, the scripts and run logs they
+fingerprint, and the package name `qsr2`. QSR v1 is the authors' earlier code, kept in `tests/fixtures/qsr_v1/`.
 
 This repository contains everything the paper's results rest on:
 
